@@ -1,0 +1,1687 @@
+'<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>First occurrence prime gaps</TITLE>
+<META NAME="author" CONTENT="Thomas R. Nicely">
+<META HTTP-EQUIV="resource-type" CONTENT="document">
+<META HTTP-EQUIV="description" CONTENT="A comprehensive list
+      of first occurrence and maximal prime gaps">
+<META HTTP-EQUIV="keywords" CONTENT="Primes, prime numbers,
+      prime gaps, maximal prime gaps, maximal gaps, Thomas R. Nicely">
+<META HTTP-EQUIV="URL" CONTENT="http://www.trnicely.net/gaps/gaplist.html">
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFF0" LINK="#CF0000" VLINK="#CF0000"
+      ALINK="#CF0000">
+<A NAME="Top"></A>
+<CENTER>
+<H2><U>
+                        First occurrence prime gaps
+</U></H2><H4>
+        (including first known occurrence prime gaps less than 2000)
+</H4><H2>
+<P>
+                          Dr. Thomas R. Nicely
+</H2><H4>
+                        http://www.trnicely.net<BR>
+            <A HREF="../email.html">Current email address</A>
+</CENTER>
+Freeware copyright &copy; 2017 Thomas R. Nicely. Released into the public
+public domain by the author, who disclaims any legal liability arising
+from its use.
+<P>
+Last updated 0900 GMT 11 November 2017.
+<A HREF="../index.html#TPG">Additional lists</A> of prime gaps are
+maintained on this site.
+<P>
+<HR />
+<UL>
+<LI><A HREF="#Notes">Notes</A></LI>
+<LI><A HREF="#Instructions">Instructions for submitting prime gaps</A></LI>
+<LI><A HREF="#Bib">Bibliography</A></LI>
+<LI><A HREF="#Disc">Discoverers and abbreviations</A></LI>
+<LI><A HREF="#MainTable">Gaps from 1 to 1998</A></LI>
+<LI><A HREF="#SuppTable">Additional kilogaps below 5e16</A></LI>
+<LI><A HREF="../index.html#TPG">Other tables of prime gaps</A></LI>
+</UL>
+<HR />
+<A NAME="Notes"></A>
+</H4><H3><CENTER>
+                                NOTES
+</CENTER></H3>
+<UL>
+<LI>The following table is believed to exhibit all first occurrence
+    and maximal prime gaps conclusively established as of the date
+    shown above. In addition, all first known occurrence gaps, less
+    than 2000 in measure, are shown. A supplemental table exhibits
+    all other prime gaps (<U>not</U> first occurrences), 1000 or
+    greater in measure, lying below 5e16.</LI>
+<LI>More precisely, the tables include all such gaps known to me, and
+    which I have been able to verify (to the extent practical), process,
+    format, and post. Values for which no such gap is available are
+    indicated by a missing entry.</LI>
+<LI>All prime gaps in 0 &lt; x &lt; 9.25e18 have now been analyzed.
+    The upper bound of exhaustive analysis of gaps has been extended
+    successively, as follows. For the most recent results, see the
+    <A HREF="http://www.mersenneforum.org/showthread.php?t=22187">
+    Prime Gap Searches</A> project at the Mersenne Forum (see
+    <A HREF="#PGS">PGS</A> in the Bibliography for a list of the
+    participants).
+<H4><PRE>
+    UPPER BOUND          ATTAINED BY                       DATE
+    -----------          -----------                    -----------
+    9250e15              PGS (Mersenne Forum)           03 Nov  2017
+    7000e15              PGS (Mersenne Forum)           21 Sept 2017
+    6000e15              PGS (Mersenne Forum)           16 Aug  2017
+    5500e15              PGS (Mersenne Forum)           02 Aug  2017
+    5000e15              PGS (Mersenne Forum)           18 July 2017
+    4500e15              PGS (Mersenne Forum)           05 July 2017
+    4000e15              Silva & Herzog & Pardi         04 Apr  2012
+    3600e15              Silva & Herzog & Pardi         30 Mar  2012
+    3400e15              Silva & Herzog & Silvio Pardi  06 Feb  2012
+    2608e15              Silva & Herzog                 13 Sept 2011
+    2222e15              Silva & Herzog                 27 June 2011
+    2200e15              Silva & Herzog                 24 May  2011
+    2188e15              Silva & Herzog                 09 May  2011
+    2168e15              Silva & Herzog                 09 Apr  2011
+    2133e15              Silva & Herzog                 14 Feb  2011
+    2020e15              Silva & Herzog                 06 Nov  2010
+    1610e15              Silva & Herzog                 30 Aug  2010
+    1609e15              Silva & Herzog                 05 Jan  2010
+    1600e15              Silva & Herzog                 23 Dec  2009
+    1500e15              Silva & Herzog                 24 July 2009
+    1e18                 Silva & Herzog                 26 Apr  2007
+    524e15               Silva & Herzog                 01 Mar  2007
+    520e15               Silva                          19 Feb  2007
+    425e15               Donald E. Knuth                22 Oct  2006
+    400e15               Silva                          05 June 2006
+    300e15               Silva & Herzog                 26 Dec  2005
+    200e15               Siegfried "Zig" Herzog         02 Feb  2005
+    150e15               Silva                          17 Dec  2004
+    110e15               Nyman                          20 Jan  2004 (27 Oct 2003)
+    100e15               Silva & Herzog                 20 Jan  2004
+    64.7e15              James Fry                      17 Sep  2003
+    60e15                Tom&#225;s Oliveira e Silva         21 Feb  2003
+    50.003e15            Bertil Nyman                   22 Oct  2002
+    1.598e15             Thomas R. Nicely               16 Feb  1999
+    72.63512e12          Young & Potler                         1989
+    4.444e12             Richard P. Brent                       1980
+    10.96e9              Lander & Parkin                        1967
+    104395289            Gruenberger & Armerding & Baker        1961
+    37e6                 D. H. Lehmer                           1957
+    10e6                 A. E. Western                          1934
+    3e6                  J. W. L. Glaisher                      1878
+</PRE></H4>
+    Where two dates are given, the earlier one is the date of completion
+    of computations for that interval; the later date is the point
+    at which all other integers below that interval had also been
+    exhaustively checked. See the <A HREF="#Bib">bibliography</A>
+    below for full names and attribution.</LI>
+<LI>No gap exceeding 1510 has been definitively established as a
+    first occurrence; larger gaps included in these lists are instead
+    first known occurrence prime gaps.
+    <A HREF="..\index.html#TPG">Additional lists</A> of first known
+    occurrence prime gaps are maintained on this site.</LI>
+<LI>The smallest gap whose first occurrence remains uncertain is the
+    gap of 1382.</LI>
+<LI>The smallest gap for which no occurrence is yet known is the
+    gap of 108674.</LI>
+<LI>The convention is followed here that the size (or measure) G of a
+    prime gap is the difference of its two bounding primes; consequently
+    a gap G contains (G&nbsp;&nbsp;-&nbsp;1) consecutive composite
+    integers. Some authorities (e.g., J. W. L. Glaisher, Daniel Shanks)
+    have taken (G&nbsp;&nbsp;-&nbsp;1) itself as the size of the gap, while
+    others (e.g., Richard P. Brent) have specified the size of a gap by
+    the parameter r = G/2. Furthermore, some authorities (e.g., Hans
+    Riesel, Paul Leyland) have specified a gap by the terminating prime
+    p_2, rather than the initiating prime p_1 as employed herein.</LI>
+<LI>Note that the term <U>first occurrence prime gap</U> (of measure G)
+    refers to that interval p &lt;= x &lt;= p+G for which (1) p and p+G
+    are primes, (2) p+t is composite for each integer t=1,...,G-1, and
+    (3) no smaller positive prime p possesses these properties. The
+    entity might be more accurately described as the earliest or smallest
+    occurrence of the gap G, but the terminology <U>first occurrence
+    prime gap</U> is well established in the literature. It does
+    <U>not</U> imply historical precedence; a gap of equal measure,
+    bounded by larger primes, may have been previously known.</LI>
+<LI>The term <U>first known occurrence prime gap</U> refers to a
+    gap which satisifies conditions (1) and (2) above, but for which
+    condition (3) has not been verified; there may exist a gap (at this
+    time undiscovered, or at least unknown to me) of the same size at
+    some unknown location between the current upper bound of exhaustive
+    computation and the listed gap. For prime gap measures whose first
+    occurrence is not yet known, first known occurrences serve as upper
+    bounds; the current upper limit of exhaustive scans serves as the
+    lower bound. <A HREF="..\index.html#TPG">Additional lists</A> of
+    first known occurrence prime gaps are maintained on this site; this
+    is the only list which contains first occurrence or maximal prime
+    gaps. Furthermore, I have written, and made available for download,
+    <A HREF="../gaps/td2k.zip">a powerful UBASIC computer code</A>
+    designed for the discovery of new first known occurrence prime
+    gaps.</LI>
+<LI>In these tables, the size or measure of the gap (difference of the
+    bounding primes) is shown in the first column (positions 1-6).</LI>
+<LI>The second column (positions 7-11) indicates the
+    <U>classification</U> of the gap, as explained below.</LI>
+<LI>Position 7 will ordinarily be blank. If an asterisk (*)
+    should appear, it indicates that the gap is a <U>maximal</U> gap,
+    strictly exceeding in measure all the prime gaps preceding it
+    (those between consecutive prime numbers smaller in magnitude).
+    In this case, it will in addition always be a definite first
+    occurrence and certified prime gap.</LI>
+<LI>Position 8 is blank.</LI>
+<LI>The character in position 9 is the <U>type</U> of the gap; all of
+    the gaps in this document are <U>conventional</U> (common, classic,
+    standard, regular, ordinary, normal) prime gaps, indicated by the
+    letter &quot;C&quot;; in other words, consecutive prime numbers
+    differing by the measure of the gap, as defined by conditions (1)
+    and (2) alone from the above definition of first occurrence prime
+    gaps. This is the default; if the term <U>prime gap</U> is used
+    without further qualification or elaboration, it refers to a
+    conventional prime gap. Additional lists are anticipated,
+    enumerating other types of prime gaps.</LI>
+<LI>The character in position 10 indicates the first occurrence status of
+    the prime gap. The character &quot;F&quot; signifies that the gap has
+    definitely been established (by an exhaustive scan to or beyond
+    that point) as a first occurrence prime gap. The character
+    &quot;N&quot; signifies that the gap is definitely <U>not</U> a first
+    occurrence (a prior occurrence is known, with smaller bounding primes).
+    The character &quot;?&quot; signifies that the gap is a first
+    <U>known</U> occurrence (no such gap with smaller bounding primes has
+    yet been found), but that it is not presently known if it is
+    <U>the</U> first occurrence (i.e., whether or not a gap of equal
+    measure with smaller bounding primes exists).</LI>
+<LI>The character in position 11 indicates whether the bounding
+    integers of the gap are <U>certified</U> primes (&quot;C&quot;) or
+    <U>probabilistic</U> primes (&quot;P&quot;). The bounding integers of
+    <U>certified</U> gaps (also titled confirmed, conclusive,
+    deterministic, definite, definitive, or proven) have been
+    conclusively proven prime, using trial prime divisors to the square
+    root of the prime, or some test such as APRCL2
+    (Adleman-Pomerance-Rumely-Cohen-Lenstra-Lenstra) or ECPP. The gap
+    is <U>probabilistic</U> (also titled &quot;Monte Carlo&quot;) if the
+    bounding integers have only been shown statistically prime (with a
+    probability extremely close to one), using, for example, the
+    Miller-Rabin test with multiple bases, or the
+    <A HREF="../misc/bpsw.html">strong Baillie-PSW primality test</A>.
+    For even larger integers (several hundred digits or more),
+    probabilistic tests are orders of magnitude faster than deterministic
+    tests, but all tests become computationally expensive for primes
+    having thousands of digits. I attempt to personally certify the
+    endpoint primes of smaller gaps (up to 200 digits), and to verify
+    probabilistically (BPSW test) the endpoint integers of gaps up to
+    about 10,000 digits. For gaps with more than about 10,000 digits,
+    I employ Fermat's Test with base 2 to verify that the endpoint
+    integers are either primes or base-2 pseudoprimes.
+<P>
+    The interior integers of each gap have been certified composite,
+    deterministically (by myself, the discoverer, or a third party),
+    usually by means of trial divisors, a Fermat test, or a
+    Miller-Rabin test. However, if the character in position 11 is a
+    &quot;?&quot; (classification code &quot;C??&quot;), the bounding
+    integers are probable primes (using at least Fermat's Test, base 2),
+    but the interior integers of the gap have <U>not</U> been verified
+    all composite to the satisfaction of Thomas R. Nicely; consequently,
+    there remains a significant possibility that such a gap may in fact
+    be smaller in measure than indicated, due to the as yet undetected
+    presence of an interior prime.
+<P>
+    In all cases, ultimate responsibility for the verification of a gap
+    rests with the discoverer(s).</LI>
+<LI>The listed discoverers (abbreviation in the third column) and dates
+    (year in the fourth column) reflect my best knowledge or estimate.
+    If the actual date of discovery is not known, the date of
+    publication or the date of the preprint is shown; if this
+    is not known, an estimate is given. Some or all of the gaps
+    occurring below 1e5 were almost certainly known prior to the
+    indicated discovery, and the attribution of some of the other gaps
+    below 1e8 is in doubt; for example, Appel and Rosser published
+    significant (but incomplete) results for the gaps below 1e8 in 1961,
+    the same year that Gruenberger and Armerding published definitive
+    results to 104395289 from data generated by Baker and Gruenberger in
+    1959. In general, attribution is not provided for certification of
+    a gap already established probabilistically; and in any case, the
+    discovery date corresponds to the probabilistic verification of
+    the gap.</LI>
+<LI>The fifth column (positions 26-32) states a so-called <U>figure of
+    merit</U> for the gap. This indicates how much larger the gap is
+    than the average gap (approximately ln(x), as a consequence of the
+    Prime Number Theorem) between primes near that point; the greater
+    the merit, the more unusual the gap. The merit is computed as
+    G/ln(p_1); variations in use (and at one time employed in these
+    tables) include G/ln(p_2) and G/ln((p_1 + p_2)/2), where p_1 and
+    p_2 are the initiating and terminating primes of the gap. For all
+    but the first few gaps, the differences among these formulas are
+    trivial; indeed, if the results are rounded to two decimal places,
+    I have found no discrepancies in the resulting values for any gap
+    exceeding 112.
+<P>
+    NOTE: As a general rule, gaps with merits less than 1.00 will not
+    be included in these tables. Such gaps would be smaller than the
+    average gap in that region.</LI>
+<LI>The sixth column in the tables (positions 33-38) indicates the
+    number of decimal digits in the initiating prime.</LI>
+<LI>The seventh column (positions 41 and beyond) shows the initiating
+    prime (smaller bounding integer) of the gap. Due to connection speed
+    limitations (56 Kb/sec max), <U>initiating primes longer than 200
+    characters are abbreviated</U>; as the lists grow, additional
+    restrictions of this nature (such as a minimum acceptable merit)
+    may eventually become necessary. Abbreviated primes are shown in the
+    form 123456789012345678901234567890..., with a few (usually 25 or more)
+    of the most significant digits shown, followed by an ellipsis
+    &quot;...&quot;. A file including the complete specifications of
+    abbreviated primes, and all recorded first occurrence, maximal,
+    and first known occurrence prime gaps, is nearly 20 MB in size, and
+    my dialup connection renders it impractical to maintain the
+    file online and updated.</LI>
+<LI>However, I have made available for download the zipfile
+    <A HREF="merits.zip">merits.zip</A>, which contains a text file
+    specifying the measure G and the merit M=G/ln(p_1) for all known
+    first occurrence and first known occurrence prime gaps. This file
+    should be of assistance in determining whether or not some newly
+    discovered gap constitutes a new first known occurrence.</LI>
+<A NAME="Instructions"></A>
+<LI><U><B>INSTRUCTIONS FOR SUBMITTING PRIME GAPS:</B></U>
+    If you wish to submit lists of gaps for inclusion in this document,
+    please send them as attachments consisting of <U>zipped plain text</U>
+    files. <B>Avoid proprietary formats such as Word, WordPerfect, Excel,
+    TeX, PDF, or PostScript. Avoid embedding data in formats such as
+    &quot;rich text&quot;, HTML, XHTML, or XML. Multimedia submissions
+    (video, audio, images, etc.) and social media submissions (Twitter,
+    YouTube, Facebook, instant messaging, etc.) will not be accepted.</B>
+    Note that word processors and ordinary e-mail will usually destroy any
+    formatting, and may corrupt very long lines (127 characters or more).
+    Click <A HREF="../email.html">here</A> for my
+    <A HREF="../email.html">current e-mail address</A>.
+<P>
+    Note, however, that if your zipfiles exceed several MB in size,
+    it is not advisable to send them as attachments, as you will risk
+    mailbox overflow or bounceback, depending on restrictions enforced
+    by the e-mail providers. For such large files, furnish instead a
+    pointer to a Website from which I can download the file.
+<P>
+    If possible, use the exact format employed for the gaps in this
+    document, with the exception that you <U>must</U> specify the
+    initating prime in its entirety, either by use of a simple formula
+    (such as 10^999 + 7, using BASIC syntax; the factorial [!] and
+    primorial [#] operators are also available) or by the complete
+    decimal expansion of the integer. If line continuation is employed,
+    use a trailing backslash &quot;\&quot; as the line continuation
+    character. Even though the initiating prime may be abbreviated in
+    some of the posted listings, complete specifications of the primes
+    are necessary for validation of the gaps.
+<P>
+    As an alternative, you may simply submit your gaps in the form
+    of one gap (two entries) per line, gap size first, <U>initiating</U>
+    prime p_1 following, separated by two or more spaces:
+<H4><PRE>
+                        ggggg  ppppppppppppppppppppp
+                        ggggg  ppppppppppppppppppppp
+                        ggggg  ppppppppppppppppppppp
+                        .....  .....................
+</PRE></H4>
+    with the size of the gap and initiating prime each as an unbroken
+    sequence of decimal digits (no commas, decimal points, spaces, or
+    other internal grouping symbols embedded within a sequence of digits);
+    one gap per line; no other symbols on the line. The initiating prime
+    may be specified, as above, by a recognizable expression (e.g.,
+    10^999 + 348957 or 2843# - 4759).
+<P>
+    Be aware that there may be a delay of several days before your
+    gaps are posted, while I am combining and processing multiple
+    submissions.</LI>
+<LI><A HREF="g1m.html#Format">Additional instructions</A> are provided for
+    the formatting and submission of gaps of one million or greater (or
+    having initiating primes of 100000 or more characters), which would
+    otherwise overflow the standard format descibed above.</LI>
+<LI>I have made available for download the zipfile
+    <A HREF="cglp4.zip">cglp4.zip</A>, featuring a DOS/Wintel executable
+    which will check gap listings for validity, using probabilistic
+    primality tests of extremely high reliability. Included are sample
+    input and output files, source code (GNU C with GMP), and support
+    routines. I strongly recommend the use of this code to check your
+    listings prior to submission.</LI>
+<LI>Notification of any errors or omissions will be appreciated.</LI>
+</UL>
+<H3><CENTER>
+<A NAME="Bib"></A>
+                       Bibliography
+</CENTER></H3>
+<UL>
+<LI><A HREF="http://users.cybercity.dk/~dsl522332/math/">
+    Torbj&#246;rn Alm</A>.</LI>
+<LI><A HREF="http://users.cybercity.dk/~dsl522332/math/">
+    Jens Kruse Andersen</A>. See also Andersen's
+    <A HREF="http://users.cybercity.dk/~dsl522332/math/primegaps/gaps20.htm">
+    The Top-20 Prime Gaps</A>, the successor to a compilation
+    maintained until February 2004 by Paul Leyland. Andersen's work
+    has also confirmed the certification of a great many
+    probabilistic gaps, as well as the probabilistic validity of
+    many questionable gaps of thousands of digits.</LI>
+<LI>Kenneth I. Appel and J. Barkley Rosser, &quot;Table for estimating
+    functions of primes,&quot; Communications Research Division Technical
+    Report Number 4, Institute for Defense Analyses, Princeton NJ (1961),
+    xxxii + 125 pp. (22 cm.). Reviewed in Math. Comp. 16:80 (1962) 500-501
+    RMT 55.</LI>
+<LI>C. L. Baker and F. J. Gruenberger, &quot;The first six million prime
+    numbers,&quot; The Rand Corporation, Santa Monica CA, published by the
+    Microcard Foundation, Madison WI (1959), 8 pp. (16x23 cm.) + 62
+    cards (7.5x12.6 cm). Reviewed in Math. Comp. 15:73 (1961) 82 RMT 4.
+<LI>D. Baugh and F. O'Hara, Letters to the Editor,
+    &quot;Large prime gaps&quot; and &quot;And more,&quot;
+    J. Recreational Math. 24:3 (1992) 186-187.</LI>
+<LI>Richard P. Brent, &quot;The first occurrence of large
+    gaps between successive primes,&quot; Math. Comp. 27:124
+    (1973) 959-963, MR 48#8360.</LI>
+<LI>Richard P. Brent, &quot;The first occurrence of certain
+    large prime gaps,&quot; Math. Comp. 35:152 (1980) 1435-36,
+    MR 81g:10002.</LI>
+<LI>Kenneth Conrow <ftp://unix.ksu.edu/pub/pentadecet/npgfile.sav>.</LI>
+<LI>Harvey Dubner and Harry Nelson, &quot;Seven consecutive primes
+    in arithmetic progression,&quot; Math. Comp. 66 (1997) 1743-1749,
+    MR 98a:11122. Dubner wrote (ca. 1995-96) codes implementing
+    the methods discussed in this paper, and these formed the
+    basis for the codes written by Dubner and Nicely and used
+    in their discoveries of first known occurrence prime gaps
+    (exceeding 1065).</LI>
+<LI><A HREF="http://www.worldofnumbers.com/">Patrick De Geest</A>.</LI>
+<LI>J. W. L. Glaisher, &quot;On long successions of composite
+    numbers,&quot; Messenger of Mathematics 7 (1877) 102-106,
+    171-176.</LI>
+<LI>F. J. Gruenberger and G. Armerding, &quot;Statistics on the first six
+    million prime numbers,&quot; Paper P-2460 of the Rand Corporation,
+    Santa Monica CA (1961), 145 pp. (8.5" x 11"). Reviewed in Math. Comp.
+    19:91 (1965) 503-505 RMT 73.</LI>
+<LI>Siegfried "Zig" Herzog, Mont Alto campus of Penn State University.</LI>
+<LI><A HREF="http://www.rkmath.rikkyo.ac.jp/~kida/ubasic.htm">Y&ucirc;ji
+    Kida</A>, Professor of Mathematics, Rikkyo University, Japan, author
+    of UBASIC, a freeware ultraprecision programming, development, and
+    runtime environment with number theoretical enhancements.
+    <A HREF="../misc/ubver88f.zip">Version 8.8f</A> (08 October 2000, 725K)
+    may be downloaded here.</LI>
+<LI><A HREF="http://www-cs-staff.stanford.edu/~knuth/">Professor Donald
+    Ervin Knuth</A>, Stanford University.</LI>
+<LI>L. J. Lander and Thomas R. Parkin, &quot;On the first
+    appearance of prime differences,&quot; Math. Comp. 21 (1967)
+    483-488, MR 37#6237.</LI>
+<LI>Derrick Henry Lehmer, &quot;Tables concerning the distribution
+    of primes up to 37 millions&quot; (1957). Copy deposited
+    in the UMT file and reviewed in MTAC 13 (1959) 56-57 RMT 3.</LI>
+<LI>Paul Leyland,
+    <A HREF="http://users.cybercity.dk/~dsl522332/math/primegaps/gaps20.htm">
+    The Top-20 Prime Gaps</A>, maintained by Jens Kruse Andersen
+    since February 2004.</LI>
+<LI><A HREF="http://www.lix.polytechnique.fr/~morain/">Fran&ccedil;ois
+    Morain</A>, deterministic certification of certain
+    primes, using his own implementations of ECPP (elliptic curve
+    primality proving).
+<LI>Thomas R. Nicely, &quot;<A HREF="gaps.html">New maximal prime
+    gaps and first occurrences</A>&quot;, Math. Comp. 68:227 (July, 1999)
+    1311-1315, MR 99i:11004.</LI>
+<LI>Thomas R. Nicely and Bertil Nyman,
+    &quot;<A HREF="gaps2.html">First occurrence of a prime gap of 1000
+    or greater</A>,&quot; unpublished (26 May 1999).</LI>
+<LI>NoAttrib, anonymous contributors who do not wish attribution.</LI>
+<LI>Bertil Nyman and Thomas R. Nicely,
+    &quot;<A HREF="gaps3.html">New prime gaps between $10^{15}$ and
+    $5 \times 10^{16}$</A>,&quot; Journal of Integer Sequences 6 (2003),
+    Article 03.3.1, 6 pp. (electronic). Available in various formats
+    (PS, PDF, dvi, AMS-LaTeX2e) at the home page of the
+    <A HREF="https://cs.uwaterloo.ca/journals/JIS/">Journal
+    of Integer Sequences</A>.</LI>
+<LI>Paulo Ribenboim, &quot;The little book of big primes,&quot;
+    Springer-Verlag, New York, 1991, MR 92i:11008. Ribenboim
+    documents (p. 142) Young and Potler's otherwise unpublished
+    discovery (probably in 1988) of the 804 gap.</LI>
+<A NAME="PGS"></A>
+<LI>PGS, the <A HREF="http://www.mersenneforum.org/showthread.php?t=22187">
+    Prime Gap Searches</A>
+    project at the Mersenne Forum. S. Cole, L. Desnogues, R. Gerbicz,
+    D. Jacobsen, A.P. Key, L. Morelli, A. Nair, C.E.L. Pinho, M. Raab,
+    T. Ritschel, R.W. Smith (coordinator), D. Stevens. Computer codes in C
+    and Perl, developed by Robert Gerbicz, Dana Jacobsen, Antonio P. Key,
+    <I>et al</I>. Project initiated April 2017.
+<LI>Luis Rodriguez (AKA Luis Rodriguez Abreu/Torres), e-mail
+    communications (15/18 January 1999).</LI>
+<LI><A HREF="http://users.cybercity.dk/~dsl522332/math/">Hans Rosenthal</A>.</LI>
+<LI><A HREF="http://www.ieeta.pt/~tos/hobbies.html">
+    Tom&#225;s Oliveira e Silva</A>, Universidade de Aveiro, Portugal.
+    Research project in progress, concerning numerical verification of
+    the Goldbach conjecture to a large upper bound, with collateral
+    counts of primes, twin primes, and prime gaps.</LI>
+<LI>Robert W. Smith, coordinator of the
+    <A HREF="http://www.mersenneforum.org/showthread.php?t=22187">Prime Gap Searches</A>
+    project at the Mersenne Forum.
+<LI>A. E. Western, "Note on the magnitude of the difference between
+    successive primes," J. London Math. Soc. 9 (1934) 276-278.
+<LI>Marek Wolf, <A HREF="http://www.ift.uni.wroc.pl/~mwolf">&quot;Unexpected
+    regularities in the distribution of prime numbers,&quot;</A> (preprint,
+    May 1996).</LI>
+<LI>Marek Wolf, <A HREF="http://www.ift.uni.wroc.pl/~mwolf">&quot;First
+    occurrence of a given gap between consecutive primes,&quot;</A>
+    (preprint, April 1997).</LI>
+<LI>Jeff Young and Aaron Potler, &quot;First occurrence prime
+    gaps,&quot; Math. Comp. 52:185 (1989) 221-224, MR 89f:11019.</LI>
+</UL>
+<A NAME="Disc"></A>
+<H3><CENTER>
+                     Abbreviations for Discoverers
+</CENTER></H3>
+<H4><PRE>
+ANair_MF---Anand S. Nair (PGS).
+APinhTOS---Armando Pinho. Computer codes by Tom&#225;s Oliveira e Silva.
+A.Walker---Andrew John Walker.
+AEWestrn---A. E. Western.
+Andersen---Jens Kruse Andersen.
+ApplRssr---Kenneth I. Appel and J. Barkley Rosser.
+ATeixTOS---Ant&#243;nio Teixera. Computer codes by Tom&#225;s Oliveira e Silva.
+Be.Nyman---Bertil Nyman.
+Blnchtte---Gilles Blanchette.
+CBastTOS---Carlos Bastos. Computer codes by Tom&#225;s Oliveira e Silva.
+CKernTOS---Cristian Kern. Computer codes by Tom&#225;s Oliveira e Silva.
+ColeStev---Steve Cole (PGS).
+DanielH.---Daniel Hermle.
+DBgh&FOH---D. Baugh and F. O'Hara.
+DHLehmer---Derrick Henry Lehmer.
+DonKnuth---Donald Ervin Knuth.
+Erickson---Eddie Erickson.
+Euclid  ---Euclid.
+Fougeron---Jim Fougeron.
+GABandAR---F. J. Gruenberger, G. Armerding, and C. L. Baker (1959, 1961),
+	   and independently, Kenneth I. Appel and J. Barkley Rosser (1961).
+Gapcoin----The <A HREF="http://gapcoin.org">Gapcoin network</A>,
+	   a Bitcoin derivative, employs a hashing algorithm which searches
+	   for prime gaps of high merit. Jonnie Frey, developer.
+Glaisher---J. W. L. Glaisher.
+H.Dubner---Harvey Dubner.
+HrzogTOS---Siegfried "Zig" Herzog. Computer codes by Tom&#225;s Oliveira e Silva.
+Jacobsen---Dana Jacobsen, running code using C and Perl.
+JamesFry---James Fry.
+JdeGroot---Jeroen de Groot.
+JFNSTOeS---John Fettig and Nahil Sobh, NCSA. Computer codes by Tom&#225;s Oliveira e Silva.
+JLGPardo---Jose Luis Gomez Pardo.
+JRdrgTOS---Jo&#227;o Manuel Rodrigues. Computer codes by Tom&#225;s Oliveira e Silva.
+K.Conrow---Kenneth Conrow.
+KOGrndln---Kjell-Olav Gr&#248;ndalen.
+_Kokales---David Kokales. Also contributed deterministic primality proofs.
+LLnhardy---Leif Leonhardy.
+LndrPrkn---L. J. Lander and Thomas R. Parkin.
+M.Jansen---Michiel Jansen.
+MJandJKA---Michiel Jansen and Jens Kruse Andersen.
+MJPC&JKA---Michiel Jansen, Pierre Cami, and Jens Kruse Andersen.
+ML.Brown---Milton L. Brown.
+MrtnRaab---Martin Raab.
+NicelyHD---Thomas R. Nicely. Computer codes inspired by Harvey Dubner's work.
+NoAttrib---Anonymous contributors who do not wish attribution.
+NuuKuosa---Nuutti Kuosa.
+PardiTOS---Silvio Pardi. Computer codes by Tom&#225;s Oliveira e Silva.
+PDeGeest---Patrick De Geest.
+PierCami---Pierre Cami.
+Pinho_MF---Carlos Eduardo Leal de Pinho (PGS).
+R.Athale---Rahul Ramesh Athale.
+RFischer---Richard Fischer.
+Ritschel---Thomas Ritschel (PGS).
+RobSmith---Robert W. Smith. Some of Smith's results after 2014 employ
+	   Perl code written by Dana Jacobsen. Coordinator, PGS.
+Rosnthal---Hans Rosenthal.
+RosntlJA---Hans Rosenthal. Computer codes by Jens Kruse Andersen.
+RosntlJF---Hans Rosenthal. Computer codes by Jim Fougeron.
+RP.Brent---Richard P. Brent.
+Shepherd---Rick L. Shepherd.
+Spielaur---Helmut Spielauer.
+TAlmFMJA---Torbj&#246;rn Alm. Computer codes by Jens Kruse Andersen.
+           Deterministic primality proofs by Fran&ccedil;ois Morain.
+T.Hadley---Thomas Hadley.
+TOeSilva---Tom&#225;s Oliveira e Silva.
+Toni_Key---Antonio Key, using Perl codes developed by Dana Jacobsen.
+TorAlmJA---Torbj&#246;rn Alm. Computer codes by Jens Kruse Andersen.
+TRNicely---Thomas R. Nicely.
+Weslwski---Arkadiusz Weso&#x0142;owski.
+Yng&Ptlr---Jeff Young and Aaron Potler.
+YPPauloR---Jeff Young and Aaron Potler, as reported by Paulo Ribenboim.
+</PRE>
+<A NAME="MainTable"></A>
+<HR />
+<PRE>
+=========================================================================================
+   Gap  Cls Discvrer Year  Merit Digts  Following the prime
+=========================================================================================
+     1* CFC Euclid   -300   1.44     1  2
+     2* CFC AEWestrn 1934   1.82     1  3
+     4* CFC Glaisher 1877   2.06     1  7
+     6* CFC Glaisher 1877   1.91     2  23
+     8* CFC Glaisher 1877   1.78     2  89
+    10  CFC DHLehmer 1957   2.03     3  139
+    12  CFC DHLehmer 1957   2.27     3  199
+    14* CFC Glaisher 1877   2.96     3  113
+    16  CFC DHLehmer 1957   2.13     4  1831
+    18* CFC Glaisher 1877   2.88     3  523
+    20* CFC Glaisher 1877   2.95     3  887
+    22* CFC AEWestrn 1934   3.13     4  1129
+    24  CFC DHLehmer 1957   3.23     4  1669
+    26  CFC DHLehmer 1957   3.33     4  2477
+    28  CFC DHLehmer 1957   3.50     4  2971
+    30  CFC DHLehmer 1957   3.59     4  4297
+    32  CFC DHLehmer 1957   3.71     4  5591
+    34* CFC Glaisher 1877   4.73     4  1327
+    36* CFC Glaisher 1877   3.93     4  9551
+    38  CFC DHLehmer 1957   3.68     5  30593
+    40  CFC DHLehmer 1957   4.05     5  19333
+    42  CFC DHLehmer 1957   4.33     5  16141
+    44* CFC Glaisher 1877   4.55     5  15683
+    46  CFC DHLehmer 1957   4.07     5  81463
+    48  CFC DHLehmer 1957   4.68     5  28229
+    50  CFC DHLehmer 1957   4.82     5  31907
+    52* CFC Glaisher 1877   5.26     5  19609
+    54  CFC Glaisher 1877   5.15     5  35617
+    56  CFC Glaisher 1877   4.95     5  82073
+    58  CFC Glaisher 1877   5.42     5  44293
+    60  CFC Glaisher 1877   5.62     5  43331
+    62  CFC Glaisher 1877   5.94     5  34061
+    64  CFC Glaisher 1877   5.61     5  89689
+    66  CFC DHLehmer 1957   5.50     6  162143
+    68  CFC DHLehmer 1957   5.76     6  134513
+    70  CFC DHLehmer 1957   5.80     6  173359
+    72* CFC Glaisher 1877   6.95     5  31397
+    74  CFC DHLehmer 1957   5.73     6  404597
+    76  CFC DHLehmer 1957   6.20     6  212701
+    78  CFC DHLehmer 1957   6.42     6  188029
+    80  CFC Glaisher 1877   6.06     6  542603
+    82  CFC Glaisher 1877   6.57     6  265621
+    84  CFC Glaisher 1877   6.44     6  461717
+    86* CFC Glaisher 1877   7.19     6  155921
+    88  CFC Glaisher 1877   6.66     6  544279
+    90  CFC Glaisher 1877   6.97     6  404851
+    92  CFC Glaisher 1877   6.70     6  927869
+    94  CFC DHLehmer 1957   6.76     7  1100977
+    96* CFC DHLehmer 1957   7.50     6  360653
+    98  CFC Glaisher 1877   7.36     6  604073
+   100  CFC Glaisher 1877   7.76     6  396733
+   102  CFC Glaisher 1877   7.19     7  1444309
+   104  CFC Glaisher 1877   7.35     7  1388483
+   106  CFC DHLehmer 1957   7.62     7  1098847
+   108  CFC Glaisher 1877   7.39     7  2238823
+   110  CFC Glaisher 1877   7.75     7  1468277
+   112* CFC Glaisher 1877   8.74     6  370261
+   114* CFC Glaisher 1877   8.70     6  492113
+   116  CFC DHLehmer 1957   7.44     7  5845193
+   118* CFC Glaisher 1877   8.36     7  1349533
+   120  CFC Glaisher 1877   8.30     7  1895359
+   122  CFC DHLehmer 1957   8.16     7  3117299
+   124  CFC Glaisher 1877   7.89     7  6752623
+   126  CFC Glaisher 1877   8.79     7  1671781
+   128  CFC DHLehmer 1957   8.44     7  3851459
+   130  CFC DHLehmer 1957   8.37     7  5518687
+   132* CFC Glaisher 1877   9.35     7  1357201
+   134  CFC Glaisher 1877   8.50     7  6958667
+   136  CFC Glaisher 1877   8.68     7  6371401
+   138  CFC DHLehmer 1957   9.10     7  3826019
+   140  CFC Glaisher 1877   8.83     7  7621259
+   142  CFC DHLehmer 1957   8.79     8  10343761
+   144  CFC DHLehmer 1957   8.83     8  11981443
+   146  CFC Glaisher 1877   9.35     7  6034247
+   148* CFC Glaisher 1877  10.20     7  2010733
+   150  CFC DHLehmer 1957   9.13     8  13626257
+   152  CFC Glaisher 1877   9.53     7  8421251
+   154* CFC AEWestrn 1934  10.03     7  4652353
+   156  CFC DHLehmer 1957   9.34     8  17983717
+   158  CFC GABandAR 1961   8.92     8  49269581
+   160  CFC DHLehmer 1957   9.23     8  33803689
+   162  CFC GABandAR 1961   9.27     8  39175217
+   164  CFC DHLehmer 1957   9.75     8  20285099
+   166  CFC GABandAR 1961   9.10     8  83751121
+   168  CFC GABandAR 1961   9.64     8  37305713
+   170  CFC DHLehmer 1957   9.92     8  27915737
+   172  CFC GABandAR 1961   9.85     8  38394127
+   174  CFC GABandAR 1961   9.79     8  52721113
+   176  CFC GABandAR 1961  10.08     8  38089277
+   178  CFC GABandAR 1961  10.18     8  39389989
+   180* CFC DHLehmer 1957  10.81     8  17051707
+   182  CFC DHLehmer 1957  10.46     8  36271601
+   184  CFC GABandAR 1961  10.12     8  79167733
+   186  CFC LndrPrkn 1967   9.89     9  147684137
+   188  CFC LndrPrkn 1967  10.05     9  134065829
+   190  CFC LndrPrkn 1967  10.12     9  142414669
+   192  CFC LndrPrkn 1967  10.31     9  123454691
+   194  CFC LndrPrkn 1967  10.25     9  166726367
+   196  CFC GABandAR 1961  10.85     8  70396393
+   198  CFC GABandAR 1961  11.22     8  46006769
+   200  CFC LndrPrkn 1967  10.13     9  378043979
+   202  CFC LndrPrkn 1967  10.92     9  107534587
+   204  CFC LndrPrkn 1967  11.01     9  112098817
+   206  CFC LndrPrkn 1967  10.69     9  232423823
+   208  CFC LndrPrkn 1967  10.90     9  192983851
+   210* CFC DHLehmer 1957  12.46     8  20831323
+   212  CFC LndrPrkn 1967  11.05     9  215949407
+   214  CFC LndrPrkn 1967  11.06     9  253878403
+   216  CFC LndrPrkn 1967  11.29     9  202551667
+   218  CFC LndrPrkn 1967  11.12     9  327966101
+   220* CFC GABandAR 1961  12.45     8  47326693
+   222* CFC LndrPrkn 1967  11.92     9  122164747
+   224  CFC LndrPrkn 1967  11.30     9  409866323
+   226  CFC LndrPrkn 1967  11.26     9  519653371
+   228  CFC LndrPrkn 1967  11.06     9  895858039
+   230  CFC LndrPrkn 1967  11.37     9  607010093
+   232  CFC LndrPrkn 1967  11.55     9  525436489
+   234* CFC LndrPrkn 1967  12.28     9  189695659
+   236  CFC LndrPrkn 1967  12.30     9  216668603
+   238  CFC LndrPrkn 1967  11.71     9  673919143
+   240  CFC LndrPrkn 1967  12.13     9  391995431
+   242  CFC LndrPrkn 1967  12.27     9  367876529
+   244  CFC LndrPrkn 1967  11.99     9  693103639
+   246  CFC LndrPrkn 1967  12.22     9  555142061
+   248* CFC LndrPrkn 1967  13.00     9  191912783
+   250* CFC LndrPrkn 1967  12.64     9  387096133
+   252  CFC LndrPrkn 1967  12.44     9  630045137
+   254  CFC LndrPrkn 1967  12.15    10  1202442089
+   256  CFC LndrPrkn 1967  11.99    10  1872851947
+   258  CFC LndrPrkn 1967  12.29    10  1316355323
+   260  CFC LndrPrkn 1967  12.58     9  944192807
+   262  CFC LndrPrkn 1967  12.34    10  1649328997
+   264  CFC LndrPrkn 1967  12.23    10  2357881993
+   266  CFC LndrPrkn 1967  12.61    10  1438779821
+   268  CFC LndrPrkn 1967  12.65    10  1579306789
+   270  CFC LndrPrkn 1967  12.82    10  1391048047
+   272  CFC LndrPrkn 1967  12.75    10  1851255191
+   274  CFC LndrPrkn 1967  13.07    10  1282463269
+   276  CFC LndrPrkn 1967  13.60     9  649580171
+   278  CFC LndrPrkn 1967  12.54    10  4260928601
+   280  CFC LndrPrkn 1967  13.12    10  1855047163
+   282* CFC LndrPrkn 1967  14.18     9  436273009
+   284  CFC LndrPrkn 1967  13.37    10  1667186459
+   286  CFC LndrPrkn 1967  13.14    10  2842739311
+   288* CFC LndrPrkn 1967  13.73    10  1294268491
+   290  CFC LndrPrkn 1967  13.56    10  1948819133
+   292* CFC LndrPrkn 1967  13.84    10  1453168141
+   294  CFC LndrPrkn 1967  13.09    10  5692630189
+   296  CFC LndrPrkn 1967  13.22    10  5260030511
+   298  CFC LndrPrkn 1967  13.02    10  8650524583
+   300  CFC LndrPrkn 1967  13.46    10  4758958741
+   302  CFC LndrPrkn 1967  13.35    10  6675573497
+   304  CFC LndrPrkn 1967  14.07    10  2433630109
+   306  CFC LndrPrkn 1967  13.85    10  3917587237
+   308  CFC LndrPrkn 1967  13.73    10  5490459101
+   310  CFC LndrPrkn 1967  14.02    10  4024713661
+   312  CFC LndrPrkn 1967  13.80    10  6570018347
+   314  CFC LndrPrkn 1967  13.70    10  8948418749
+   316  CFC RP.Brent 1973  13.61    11  12109172293
+   318  CFC LndrPrkn 1967  14.33    10  4372999721
+   320* CFC LndrPrkn 1967  14.84    10  2300942549
+   322  CFC LndrPrkn 1967  14.12    10  7961074441
+   324  CFC LndrPrkn 1967  14.02    11  10958687879
+   326  CFC LndrPrkn 1967  14.50    10  5837935373
+   328  CFC RP.Brent 1973  14.08    11  13086861181
+   330  CFC LndrPrkn 1967  14.63    10  6291356009
+   332  CFC LndrPrkn 1967  14.76    10  5893180121
+   334  CFC RP.Brent 1973  13.83    11  30827138509
+   336* CFC LndrPrkn 1967  15.22    10  3842610773
+   338  CFC RP.Brent 1973  14.19    11  22076314313
+   340  CFC LndrPrkn 1967  14.86    10  8605261447
+   342  CFC RP.Brent 1973  14.74    11  12010745569
+   344  CFC RP.Brent 1973  14.51    11  19724087267
+   346  CFC RP.Brent 1973  14.95    11  11291401837
+   348  CFC RP.Brent 1973  14.77    11  17002876643
+   350  CFC RP.Brent 1973  14.87    11  16808773277
+   352  CFC RP.Brent 1973  14.58    11  30750892801
+   354* CFC LndrPrkn 1967  15.96    10  4302407359
+   356  CFC RP.Brent 1973  14.89    11  24355072517
+   358  CFC RP.Brent 1973  15.21    11  16792321339
+   360  CFC RP.Brent 1973  15.18    11  20068818197
+   362  CFC RP.Brent 1973  14.90    11  35877724601
+   364  CFC RP.Brent 1973  15.19    11  25425617317
+   366  CFC RP.Brent 1973  15.43    11  20108776097
+   368  CFC RP.Brent 1973  14.92    11  51430518413
+   370  CFC RP.Brent 1973  14.91    11  59942358571
+   372  CFC RP.Brent 1973  15.67    11  20404137779
+   374  CFC RP.Brent 1973  15.67    11  23064761663
+   376  CFC RP.Brent 1973  16.00    11  16161669787
+   378  CFC RP.Brent 1973  15.51    11  38116957819
+   380  CFC RP.Brent 1973  15.92    11  23323808741
+   382* CFC LndrPrkn 1967  16.54    11  10726904659
+   384* CFC RP.Brent 1973  16.17    11  20678048297
+   386  CFC RP.Brent 1973  15.89    11  35238645587
+   388  CFC RP.Brent 1973  15.05    12  156798792223
+   390  CFC RP.Brent 1973  15.79    11  53241805651
+   392  CFC RP.Brent 1973  15.38    12  117215204531
+   394* CFC RP.Brent 1973  16.53    11  22367084959
+   396  CFC RP.Brent 1973  16.06    11  50806025873
+   398  CFC RP.Brent 1973  16.30    11  40267027589
+   400  CFC RP.Brent 1973  16.27    11  47203303159
+   402  CFC RP.Brent 1973  16.40    11  44293346177
+   404  CFC RP.Brent 1973  15.72    12  144999022043
+   406  CFC RP.Brent 1973  16.49    11  49306638307
+   408  CFC RP.Brent 1973  15.92    12  134664608389
+   410  CFC RP.Brent 1973  16.20    11  98276144093
+   412  CFC RP.Brent 1973  16.13    12  124221464119
+   414  CFC RP.Brent 1973  16.81    11  49914935177
+   416  CFC RP.Brent 1973  16.30    12  121972158437
+   418  CFC RP.Brent 1973  16.34    12  129300694603
+   420  CFC RP.Brent 1973  16.71    11  82490815123
+   422  CFC RP.Brent 1973  16.01    12  280974865361
+   424  CFC RP.Brent 1973  16.12    12  264495345259
+   426  CFC RP.Brent 1973  16.44    12  180265084403
+   428  CFC RP.Brent 1973  16.39    12  219950168411
+   430  CFC RP.Brent 1973  16.38    12  250964194171
+   432  CFC RP.Brent 1973  17.15    11  87241770619
+   434  CFC RP.Brent 1973  16.97    12  127084569923
+   436  CFC RP.Brent 1973  16.37    12  367459059871
+   438  CFC RP.Brent 1973  17.28    12  101328529441
+   440  CFC RP.Brent 1973  17.14    12  141846299801
+   442  CFC RP.Brent 1973  16.52    12  417470554687
+   444  CFC RP.Brent 1973  18.26    11  36172730063
+   446  CFC RP.Brent 1973  17.17    12  190418076203
+   448  CFC RP.Brent 1973  16.77    12  402872474743
+   450  CFC RP.Brent 1973  18.09    11  63816175447
+   452  CFC RP.Brent 1973  16.82    12  466855187471
+   454  CFC RP.Brent 1973  17.44    12  202530831163
+   456* CFC RP.Brent 1973  19.04    11  25056082087
+   458  CFC RP.Brent 1973  17.32    12  304040251469
+   460  CFC RP.Brent 1973  17.96    12  131956235563
+   462  CFC RP.Brent 1973  17.29    12  400729567081
+   464* CFC RP.Brent 1973  18.96    11  42652618343
+   466  CFC RP.Brent 1973  17.22    12  565855695631
+   468* CFC RP.Brent 1973  18.30    12  127976334671
+   470  CFC RP.Brent 1973  17.25    12  681753256133
+   472  CFC RP.Brent 1973  17.17    12  865244709607
+   474* CFC RP.Brent 1973  18.28    12  182226896239
+   476  CFC RP.Brent 1973  17.43    12  725978934347
+   478  CFC RP.Brent 1973  17.95    12  367766547571
+   480  CFC RP.Brent 1973  17.84    12  482423533897
+   482  CFC RP.Brent 1973  17.41    13  1051602787181
+   484  CFC RP.Brent 1973  17.69    12  767644374817
+   486* CFC RP.Brent 1973  18.54    12  241160624143
+   488  CFC RP.Brent 1973  17.51    13  1275363152099
+   490* CFC RP.Brent 1973  18.55    12  297501075799
+   492  CFC RP.Brent 1973  17.87    12  910361180689
+   494  CFC RP.Brent 1973  18.02    12  804541404419
+   496  CFC RP.Brent 1973  18.03    12  880318998907
+   498  CFC RP.Brent 1973  18.59    12  428315806823
+   500* CFC RP.Brent 1973  18.91    12  303371455241
+   502  CFC RP.Brent 1973  18.02    13  1258535916601
+   504  CFC RP.Brent 1973  18.43    12  747431049203
+   506  CFC RP.Brent 1973  18.12    13  1339347750707
+   508  CFC RP.Brent 1973  17.99    13  1841086484491
+   510  CFC RP.Brent 1973  17.94    13  2209016910131
+   512  CFC RP.Brent 1973  18.08    13  1999066711391
+   514* CFC RP.Brent 1973  19.44    12  304599508537
+   516* CFC RP.Brent 1973  19.29    12  416608695821
+   518  CFC RP.Brent 1973  18.20    13  2296497058133
+   520  CFC RP.Brent 1973  18.26    13  2336167262449
+   522  CFC RP.Brent 1973  18.76    13  1214820695701
+   524  CFC RP.Brent 1973  18.42    13  2256065636039
+   526  CFC RP.Brent 1973  18.71    13  1620505682371
+   528  CFC RP.Brent 1973  18.82    13  1529741785139
+   530  CFC RP.Brent 1973  18.65    13  2205492372371
+   532* CFC RP.Brent 1973  19.81    12  461690510011
+   534* CFC RP.Brent 1973  19.67    12  614487453523
+   536  CFC Yng&Ptlr 1989  18.29    13  5371284217763
+   538  CFC RP.Brent 1973  18.95    13  2122536905311
+   540* CFC RP.Brent 1973  19.76    12  738832927927
+   542  CFC RP.Brent 1980  18.93    13  2707053887651
+   544  CFC RP.Brent 1973  19.02    13  2652427555639
+   546  CFC RP.Brent 1973  19.22    13  2164206784721
+   548  CFC RP.Brent 1980  19.00    13  3380058341279
+   550  CFC RP.Brent 1973  19.27    13  2496646209271
+   552  CFC RP.Brent 1973  19.42    13  2210401546601
+   554  CFC RP.Brent 1980  19.16    13  3621153039299
+   556  CFC RP.Brent 1980  19.11    13  4338624362173
+   558  CFC Yng&Ptlr 1989  19.05    13  5263973982823
+   560  CFC RP.Brent 1980  19.26    13  4260199366373
+   562  CFC RP.Brent 1973  19.81    13  2081209441279
+   564  CFC RP.Brent 1973  20.13    13  1480064231153
+   566  CFC Yng&Ptlr 1989  19.37    13  4897642179197
+   568  CFC Yng&Ptlr 1989  19.30    13  6010330572331
+   570  CFC RP.Brent 1980  19.57    13  4442109925217
+   572  CFC Yng&Ptlr 1989  19.51    13  5441175346967
+   574  CFC RP.Brent 1980  19.95    13  3108794067079
+   576  CFC Yng&Ptlr 1989  19.32    13  8817792098461
+   578  CFC Yng&Ptlr 1989  19.49    13  7552870120721
+   580  CFC Yng&Ptlr 1989  19.42    13  9383081340541
+   582* CFC RP.Brent 1973  20.84    13  1346294310749
+   584  CFC Yng&Ptlr 1989  19.75    13  6993007248239
+   586  CFC Yng&Ptlr 1989  19.88    13  6364466316577
+   588* CFC RP.Brent 1973  21.02    13  1408695493609
+   590  CFC Yng&Ptlr 1989  19.24    14  20761252261751
+   592  CFC RP.Brent 1980  20.51    13  3410069454097
+   594  CFC Yng&Ptlr 1989  20.25    13  5499789519863
+   596  CFC Yng&Ptlr 1989  19.88    14  10487995154603
+   598  CFC Yng&Ptlr 1989  20.37    13  5614481773561
+   600  CFC Yng&Ptlr 1989  20.54    13  4872634110067
+   602* CFC RP.Brent 1973  21.27    13  1968188556461
+   604  CFC Yng&Ptlr 1989  20.60    13  5439564948583
+   606  CFC Yng&Ptlr 1989  20.12    14  12112937821403
+   608  CFC Yng&Ptlr 1989  19.83    14  20767330530329
+   610  CFC Yng&Ptlr 1989  20.44    13  9105981382177
+   612  CFC Yng&Ptlr 1989  20.25    14  13397310636587
+   614  CFC Yng&Ptlr 1989  20.14    14  17418754709747
+   616  CFC Yng&Ptlr 1989  20.73    13  8095224517651
+   618  CFC RP.Brent 1980  21.27    13  4165633395149
+   620  CFC Yng&Ptlr 1989  20.76    13  9344093035661
+   622  CFC Yng&Ptlr 1989  20.60    14  13059969946711
+   624  CFC Yng&Ptlr 1989  20.23    14  24923033918059
+   626  CFC Yng&Ptlr 1989  20.10    14  33605480400197
+   628  CFC Yng&Ptlr 1989  20.15    14  34140047613391
+   630  CFC Yng&Ptlr 1989  20.88    14  12644461143649
+   632  CFC Yng&Ptlr 1989  20.09    14  45678685880759
+   634  CFC Yng&Ptlr 1989  20.79    14  17659394869309
+   636  CFC Yng&Ptlr 1989  21.28    13  9483480841753
+   638  CFC Yng&Ptlr 1989  20.92    14  17499522060011
+   640  CFC Yng&Ptlr 1989  20.83    14  22099408494481
+   642  CFC Yng&Ptlr 1989  21.20    14  14141685364577
+   644  CFC Yng&Ptlr 1989  20.54    14  41433781612373
+   646  CFC Yng&Ptlr 1989  20.47    14  51027160468351
+   648  CFC Yng&Ptlr 1989  21.66    13  9787731507761
+   650  CFC Yng&Ptlr 1989  22.21    13  5120731250207
+   652* CFC RP.Brent 1973  22.80    13  2614941710599
+   654  CFC Yng&Ptlr 1989  20.67    14  54916086007427
+   656  CFC Yng&Ptlr 1989  20.62    14  65862966031241
+   658  CFC Yng&Ptlr 1989  21.01    14  39883132551139
+   660  CFC Yng&Ptlr 1989  22.00    14  10653514291843
+   662  CFC Yng&Ptlr 1989  22.04    14  11082394066097
+   664  CFC Yng&Ptlr 1989  21.22    14  38745678640849
+   666  CFC Yng&Ptlr 1989  21.79    14  18691113008663
+   668  CFC Yng&Ptlr 1989  21.57    14  28340177964929
+   670  CFC Yng&Ptlr 1989  21.28    14  47137733785861
+   672  CFC Yng&Ptlr 1989  21.74    14  26456514142099
+   674* CFC Yng&Ptlr 1989  22.77    13  7177162611713
+   676  CFC TRNicely 1996  21.13    14  78610833115261
+   678  CFC Yng&Ptlr 1989  21.68    14  37970994487033
+   680  CFC TRNicely 1996  21.22    14  82385435331119
+   682  CFC Yng&Ptlr 1989  21.75    14  41459443375351
+   684  CFC Yng&Ptlr 1989  22.04    14  30236507704253
+   686  CFC TRNicely 1996  21.48    14  74014757794301
+   688  CFC TRNicely 1996  21.28    15  110526670235599
+   690  CFC Yng&Ptlr 1989  22.71    14  15712145060693
+   692  CFC Yng&Ptlr 1989  22.03    14  43603583701331
+   694  CFC Yng&Ptlr 1989  21.85    14  62088893223739
+   696  CFC Yng&Ptlr 1989  22.61    14  23333096984797
+   698  CFC Yng&Ptlr 1989  22.41    14  33785727371453
+   700  CFC Yng&Ptlr 1989  23.07    14  14998144209049
+   702  CFC Yng&Ptlr 1989  22.93    14  19786638118631
+   704  CFC TRNicely 1996  21.85    14  97731545943599
+   706  CFC Yng&Ptlr 1989  22.63    14  35625755878981
+   708  CFC TRNicely 1995  21.72    15  143679495784681
+   710  CFC TRNicely 1995  21.80    15  138965383978937
+   712  CFC TRNicely 1996  22.04    15  106749746034601
+   714  CFC Yng&Ptlr 1989  22.64    14  49639993268989
+   716* CFC Yng&Ptlr 1989  23.66    14  13829048559701
+   718  CFC TRNicely 1996  22.41    14  82342388119111
+   720  CFC TRNicely 1996  22.26    15  111113196467011
+   722  CFC TRNicely 1996  21.87    15  218356872845927
+   724  CFC Yng&Ptlr 1989  22.82    14  59692452738913
+   726  CFC TRNicely 1995  22.21    15  156100489308167
+   728  CFC Yng&Ptlr 1989  22.97    14  57723522921803
+   730  CFC Yng&Ptlr 1989  23.69    14  24179270588173
+   732  CFC TRNicely 1995  22.47    15  140085225001801
+   734  CFC TRNicely 1995  22.47    15  154312610974979
+   736  CFC TRNicely 1995  22.50    15  161443383249583
+   738  CFC TRNicely 1995  22.64    15  143282994823909
+   740  CFC Yng&Ptlr 1989  23.36    14  57360609786539
+   742  CFC TRNicely 1996  22.57    15  189442329715069
+   744  CFC Yng&Ptlr 1989  23.71    14  42610475373269
+   746  CFC TRNicely 1995  22.71    15  184219698008123
+   748  CFC TRNicely 1995  22.82    15  172373989611793
+   750  CFC TRNicely 1995  23.00    15  145508250945419
+   752  CFC TRNicely 1996  22.67    15  255294593822687
+   754  CFC TRNicely 1996  22.83    15  219831875554399
+   756  CFC Yng&Ptlr 1989  23.71    14  70099348325843
+   758  CFC Yng&Ptlr 1989  24.07    14  47581758352253
+   760  CFC TRNicely 1996  23.59    14  98103148488133
+   762  CFC TRNicely 1995  23.37    15  144895907074481
+   764  CFC TRNicely 1996  22.87    15  323811481625339
+   766* CFC Yng&Ptlr 1989  25.03    14  19581334192423
+   768  CFC TRNicely 1996  22.80    15  423683030575549
+   770  CFC TRNicely 1996  23.33    15  214198375528463
+   772  CFC TRNicely 1996  23.50    15  186129514280467
+   774  CFC TRNicely 1996  22.91    15  469789142849483
+   776  CFC TRNicely 1996  23.61    15  187865909338091
+   778* CFC Yng&Ptlr 1989  24.79    14  42842283925351
+   780  CFC TRNicely 1996  23.09    15  471911699384963
+   782  CFC TRNicely 1997  22.85    15  726507223559111
+   784  CFC TRNicely 1996  23.17    15  497687231721157
+   786  CFC TRNicely 1996  23.15    15  554544106989673
+   788  CFC TRNicely 1996  24.47    14  96949415903999
+   790  CFC TRNicely 1997  23.13    15  678106044936511
+   792  CFC TRNicely 1996  23.91    15  244668132223727
+   794  CFC TRNicely 1997  23.26    15  673252372176533
+   796  CFC TRNicely 1998  22.89    16  1271309838631957
+   798  CFC TRNicely 1996  23.92    15  309715100117419
+   800  CFC TRNicely 1996  23.66    15  486258341004083
+   802  CFC TRNicely 1997  23.28    15  913982990753641
+   804* CFC YPPauloR 1991  25.02    14  90874329411493
+   806* CFC TRNicely 1995  24.59    15  171231342420521
+   808  CFC TRNicely 1996  23.81    15  546609721879171
+   810  CFC TRNicely 1996  23.91    15  518557948410967
+   812  CFC Be.Nyman 1999  23.15    16  1710270958551941
+   814  CFC TRNicely 1997  23.70    15  827873854500949
+   816  CFC TRNicely 1997  23.94    15  632213931500513
+   818  CFC TRNicely 1997  23.79    15  860149012919321
+   820  CFC TRNicely 1996  24.23    15  497067290087413
+   822  CFC TRNicely 1997  23.95    15  799615339016671
+   824  CFC TRNicely 1998  23.66    16  1330854031506047
+   826  CFC TRNicely 1996  24.55    15  407835172832953
+   828  CFC TRNicely 1997  24.12    15  807201813046091
+   830  CFC TRNicely 1996  24.51    15  507747400047473
+   832  CFC TRNicely 1996  25.12    15  243212983783999
+   834  CFC TRNicely 1997  24.36    15  743844653663833
+   836  CFC TRNicely 1997  24.29    15  880772773476623
+   838  CFC TRNicely 1998  24.04    16  1384201395984013
+   840  CFC TRNicely 1997  24.61    15  670250273356109
+   842  CFC TRNicely 1998  24.28    16  1142191569235289
+   844  CFC TRNicely 1997  24.61    15  782685877447783
+   846  CFC TRNicely 1997  24.46    16  1045130023589621
+   848  CFC Be.Nyman 1999  23.91    16  2537070652896083
+   850  CFC Be.Nyman 1999  23.99    16  2441387599467679
+   852  CFC TRNicely 1998  24.41    16  1432204101894959
+   854  CFC TRNicely 1998  24.51    16  1361832741886937
+   856  CFC TRNicely 1998  24.55    16  1392892713537313
+   858  CFC TRNicely 1998  24.57    16  1464551007952943
+   860  CFC TRNicely 1997  25.02    15  844893392671019
+   862  CFC TRNicely 1996  25.59    15  425746080787897
+   864  CFC Be.Nyman 1998  24.43    16  2298355839009413
+   866  CFC Be.Nyman 1999  24.36    16  2759317684446707
+   868  CFC TRNicely 1998  24.88    16  1420178764273021
+   870  CFC Be.Nyman 1999  24.85    16  1598729274799313
+   872  CFC TRNicely 1996  25.83    15  455780714877767
+   874  CFC TRNicely 1998  25.03    16  1466977528790023
+   876  CFC TRNicely 1997  25.28    16  1125406185245561
+   878  CFC Be.Nyman 1999  24.71    16  2705074880971613
+   880  CFC TRNicely 1996  26.46    15  277900416100927
+   882  CFC Be.Nyman 1999  24.67    16  3371055452381147
+   884  CFC TRNicely 1998  25.35    16  1385684246418833
+   886  CFC Be.Nyman 1999  24.64    16  4127074165753081
+   888  CFC Be.Nyman 1999  25.08    16  2389167248757889
+   890  CFC Be.Nyman 1999  24.90    16  3346735005760637
+   892  CFC Be.Nyman 1999  25.13    16  2606748800671237
+   894  CFC Be.Nyman 1999  25.21    16  2508853349189969
+   896  CFC Be.Nyman 1999  24.99    16  3720181237979117
+   898  CFC Be.Nyman 1999  24.96    16  4198168149492463
+   900  CFC Be.Nyman 1998  25.52    16  2069461000669981
+   902  CFC TRNicely 1998  25.79    16  1555616198548067
+   904  CFC Be.Nyman 1999  25.32    16  3182353047511543
+   906* CFC TRNicely 1996  27.44    15  218209405436543
+   908  CFC Be.Nyman 1999  25.73    16  2126985673135679
+   910  CFC Be.Nyman 1999  25.93    16  1744027311944761
+   912  CFC Be.Nyman 1999  25.64    16  2819939997576017
+   914  CFC Be.Nyman 1999  25.48    16  3780822371661509
+   916* CFC TRNicely 1998  26.39    16  1189459969825483
+   918  CFC Be.Nyman 1998  25.92    16  2406868929767921
+   920  CFC Be.Nyman 1999  25.61    16  4020057623095403
+   922  CFC Be.Nyman 1999  25.62    16  4286129201882221
+   924* CFC Be.Nyman 1999  26.35    16  1686994940955803
+   926  CFC Be.Nyman 2000  25.44    16  6381944136489827
+   928  CFC Be.Nyman 2000  25.17    17  10244316228469423
+   930  CFC Be.Nyman 1999  25.91    16  3877048405466683
+   932  CFC Be.Nyman 2000  25.25    17  10676480515967939
+   934  CFC Be.Nyman 2000  25.44    16  8775815387922523
+   936  CFC Be.Nyman 1998  26.55    16  2053649128145117
+   938  CFC Be.Nyman 1999  26.12    16  3945256745730569
+   940  CFC Be.Nyman 2000  25.55    16  9438544090485889
+   942  CFC Be.Nyman 2000  25.54    17  10369943471405191
+   944  CFC Be.Nyman 1999  26.16    16  4698198022874969
+   946  CFC Be.Nyman 2000  25.80    16  8445899254653313
+   948  CFC Be.Nyman 2000  26.12    16  5806170698601659
+   950  CFC Be.Nyman 1999  26.28    16  5000793739812263
+   952  CFC Be.Nyman 1999  26.61    16  3441724070563411
+   954  CFC Be.Nyman 2000  25.98    16  8909512917643439
+   956  CFC Be.Nyman 2000  26.14    16  7664508840731297
+   958  CFC Be.Nyman 2000  26.36    16  6074186033971933
+   960  CFC Be.Nyman 1999  26.54    16  5146835719824811
+   962  CFC Be.Nyman 2000  26.15    16  9492966874626647
+   964  CFC Be.Nyman 1999  26.63    16  5241451254010087
+   966  CFC Be.Nyman 1999  26.70    16  5158509484643071
+   968  CFC Be.Nyman 2001  25.82    17  19124990244992669
+   970  CFC Be.Nyman 2000  26.33    17  10048813989052669
+   972  CFC Be.Nyman 1999  26.98    16  4452510040366189
+   974  CFC Be.Nyman 2000  26.38    17  10773850897499933
+   976  CFC Be.Nyman 2000  26.21    17  14954841632404033
+   978  CFC Be.Nyman 2000  26.41    17  12040807275386881
+   980  CFC Be.Nyman 2001  26.13    17  19403684901755939
+   982  CFC Be.Nyman 2001  26.21    17  18730085806290949
+   984  CFC Be.Nyman 2000  26.60    17  11666708491143997
+   986  CFC Be.Nyman 2002  25.89    17  34847474118974633
+   988  CFC Be.Nyman 2000  26.71    17  11678629605932719
+   990  CFC Be.Nyman 1999  27.84    16  2764496039544377
+   992  CFC Be.Nyman 1999  27.45    16  4941033906441539
+   994  CFC Be.Nyman 1999  27.75    16  3614455901007619
+   996  CFC Be.Nyman 2000  26.76    17  14693181579822451
+   998  CFC Be.Nyman 2000  26.97    17  11813551133888459
+  1000  CFC Be.Nyman 2001  26.56    17  22439962446379651
+  1002  CFC Be.Nyman 2000  26.92    17  14595374896200821
+  1004  CFC Be.Nyman 2000  27.46    16  7548471163197917
+  1006  CFC Be.Nyman 2002  26.36    17  37343192296558573
+  1008  CFC Be.Nyman 1999  27.83    16  5356763933625179
+  1010  CFC Be.Nyman 2001  26.85    17  21743496643443551
+  1012  CFC Be.Nyman 2001  26.86    17  22972837749135871
+  1014  CFC Be.Nyman 2000  27.32    17  13206732046682519
+  1016  CFC Be.Nyman 2001  26.89    17  25488154987300883
+  1018  CFC Be.Nyman 2002  26.67    17  37967240836435909
+  1020  CFC Be.Nyman 2001  27.02    17  24873160697653789
+  1022  CFC Be.Nyman 2000  27.70    17  10501301105720969
+  1024  CFC Be.Nyman 2001  27.19    17  22790428875364879
+  1026  CFC Be.Nyman 2000  27.58    17  14337646064564951
+  1028  CFC Be.Nyman 2000  27.52    17  16608210365179331
+  1030  CFC Be.Nyman 2001  27.40    17  21028354658071549
+  1032  CFC Be.Nyman 2001  27.52    17  19449190302424919
+  1034  CFC Be.Nyman 2000  27.96    17  11453766801670289
+  1036  CFC Be.Nyman 2002  27.17    17  36077433695182153
+  1038  CFC Be.Nyman 2001  27.40    17  28269785077311409
+  1040  CFC Be.Nyman 2002  27.10    17  46246848392875127
+  1042  CFC Be.Nyman 2002  27.39    17  33215047653774409
+  1044  CFC Be.Nyman 2000  28.60    16  7123663452896833
+  1046  CFC Be.Nyman 2001  27.68    17  25702173876611591
+  1048  CFC Be.Nyman 2002  26.86    17  88089672331629091
+  1050  CFC Be.Nyman 2000  28.25    17  13893290219203981
+  1052  CFC TOeSilva 2003  26.95    17  89219242873419107
+  1054  CFC Be.Nyman 2001  27.89    17  26014156620917407
+  1056  CFC Be.Nyman 2000  28.54    17  11765987635602143
+  1058  CFC Be.Nyman 2001  27.92    17  28642379760272723
+  1060  CFC Be.Nyman 2000  28.45    17  15114558265244791
+  1062  CFC Be.Nyman 2000  28.49    17  15500910867678727
+  1064  CFC Be.Nyman 2002  27.77    17  43614652195746623
+  1066  CFC TOeSilva 2003  27.24    17  98436147540371287
+  1068  CFC Be.Nyman 2001  28.32    17  23900175352205171
+  1070  CFC TOeSilva 2003  27.46    17  83122134991935569
+  1072  CFC Be.Nyman 2002  28.03    17  40433690575714297
+  1074  CFC Be.Nyman 2002  28.23    17  33288359939765017
+  1076  CFC Be.Nyman 2001  28.63    17  20931714475256591
+  1078  CFC TOeSilva 2004  27.77    17  72638824545480979
+  1080  CFC CBastTOS 2002  28.08    17  50393998281635599
+  1082  CFC TOeSilva 2003  27.94    17  65850655232778077
+  1084  CFC Be.Nyman 2002  28.32    17  41762363147589283
+  1086  CFC JRdrgTOS 2002  27.81    17  91279735474288321
+  1088  CFC TOeSilva 2004  27.90    17  86140861070845751
+  1090  CFC TOeSilva 2003  28.12    17  68402499016330903
+  1092  CFC Be.Nyman 2002  28.07    17  78120687162386527
+  1094  CFC TOeSilva 2004  27.71    18  139033656446725643
+  1096  CFC TOeSilva 2004  28.11    17  85302586561540801
+  1098  CFC Be.Nyman 2001  29.08    17  25016149672697549
+  1100  CFC Be.Nyman 2001  29.25    17  21475286713974413
+  1102  CFC Be.Nyman 2001  28.83    17  39793570504639117
+  1104  CFC Be.Nyman 2003  28.20    18  100782668521266887
+  1106  CFC Be.Nyman 2001  29.16    17  29835422457878441
+  1108  CFC Be.Nyman 2002  28.91    17  43986327184963729
+  1110  CFC TOeSilva 2003  28.37    17  98478363965750941
+  1112  CFC TOeSilva 2004  28.31    18  114325788973753817
+  1114  CFC HrzogTOS 2005  27.97    18  198887512806988729
+  1116  CFC HrzogTOS 2004  28.07    18  183670944093871963
+  1118  CFC HrzogTOS 2004  28.74    17  78661510510855829
+  1120  CFC Be.Nyman 2001  29.87    17  19182559946240569
+  1122  CFC Be.Nyman 2001  29.55    17  31068473876462989
+  1124  CFC TOeSilva 2005  28.20    18  203153416523088323
+  1126  CFC Be.Nyman 2003  28.75    18  102747074635818793
+  1128  CFC APinhTOS 2002  29.23    17  57701567767397551
+  1130  CFC TOeSilva 2004  28.68    18  128626712407417247
+  1132* CFC Be.Nyman 1999  32.28    16  1693182318746371
+  1134  CFC TOeSilva 2003  29.35    17  59847994456941689
+  1136  CFC HrzogTOS 2004  28.59    18  180522639380365181
+  1138  CFC HrzogTOS 2004  28.74    18  157238558611311811
+  1140  CFC HrzogTOS 2004  29.30    17  79017505670475503
+  1142  CFC TOeSilva 2002  29.21    17  94806694814591819
+  1144  CFC TOeSilva 2005  28.60    18  236552906662007587
+  1146  CFC JamesFry 2003  29.66    17  60592199607166471
+  1148  CFC TOeSilva 2004  29.19    18  120851132995428191
+  1150  CFC TOeSilva 2005  28.59    18  293464161465135373
+  1152  CFC TOeSilva 2004  29.26    18  125996288873077487
+  1154  CFC HrzogTOS 2004  29.07    18  172875009928864583
+  1156  CFC HrzogTOS 2004  29.71    17  78944802602538877
+  1158  CFC TOeSilva 2004  29.81    17  74224828152967109
+  1160  CFC TOeSilva 2003  30.04    17  58904398834827743
+  1162  CFC HrzogTOS 2004  29.36    18  154590409516822759
+  1164  CFC TOeSilva 2005  29.16    18  216345819354183383
+  1166  CFC JamesFry 2003  30.16    17  61499427052410467
+  1168  CFC TOeSilva 2005  29.27    18  213246910999548949
+  1170  CFC TOeSilva 2004  29.72    18  125160515463958367
+  1172  CFC DonKnuth 2006  28.92    18  400240934741322419
+  1174  CFC TOeSilva 2003  30.29    17  67777708053772723
+  1176  CFC TOeSilva 2005  29.52    18  200984626360730041
+  1178  CFC TOeSilva 2006  29.12    18  371964537401929403
+  1180  CFC HrzogTOS 2004  29.69    18  181042197317796421
+  1182  CFC HrzogTOS 2004  29.78    18  172766268126495557
+  1184* CFC Be.Nyman 2002  30.90    17  43841547845541059
+  1186  CFC DonKnuth 2006  29.25    18  404444692323376357
+  1188  CFC TOeSilva 2007  29.41    18  349406882169475043
+  1190  CFC TOeSilva 2003  30.54    17  83673835565278157
+  1192  CFC HrzogTOS 2006  29.01    18  703390724952490921
+  1194  CFC HrzogTOS 2005  29.74    18  272671045607764619
+  1196  CFC TOeSilva 2005  30.00    18  204757944249503741
+  1198* CFC TOeSilva 2002  31.07    17  55350776431903243
+  1200  CFC TOeSilva 2005  29.61    18  399081457010391689
+  1202  CFC HrzogTOS 2005  29.14    18  819615344996114321
+  1204  CFC TOeSilva 2007  29.63    18  443136926113560739
+  1206  CFC TOeSilva 2006  29.63    18  475086744253214827
+  1208  CFC HrzogTOS 2009  28.95    19  1331711247969025019
+  1210  CFC TOeSilva 2006  29.74    18  467250693994588501
+  1212  CFC TOeSilva 2006  29.80    18  460909189461777919
+  1214  CFC JFNSTOeS 2006  29.78    18  505283911484360249
+  1216  CFC TOeSilva 2007  29.73    18  577900021137712561
+  1218  CFC TOeSilva 2004  30.85    18  140935513411946599
+  1220* CFC TOeSilva 2003  31.34    17  80873624627234849
+  1222  CFC HrzogTOS 2007  29.67    18  771097525313900857
+  1224* CFC TOeSilva 2005  30.71    18  203986478517455989
+  1226  CFC HrzogTOS 2008  29.47    19  1169292497427924131
+  1228  CFC HrzogTOS 2006  29.75    18  843649638178223431
+  1230  CFC HrzogTOS 2006  29.76    18  892327717188081079
+  1232  CFC HrzogTOS 2007  30.05    18  637183034848138127
+  1234  CFC DonKnuth 2006  30.40    18  423956456398811659
+  1236  CFC TOeSilva 2004  29.82    18  999195046759853777
+  1238  CFC HrzogTOS 2005  29.88    18  991215618225244991
+  1240  CFC HrzogTOS 2008  29.88    19  1059422001388912327
+  1242  CFC HrzogTOS 2007  30.25    18  675147036415334159
+  1244  CFC HrzogTOS 2006  30.13    18  854284995847812563
+  1246  CFC HrzogTOS 2006  30.42    18  612702185805985321
+  1248* CFC TOeSilva 2005  31.26    18  218034721194214273
+  1250  CFC HrzogTOS 2007  30.39    18  733214931813155339
+  1252  CFC HrzogTOS 2008  30.18    19  1032032088646806901
+  1254  CFC DonKnuth 2006  30.91    18  416961298104009067
+  1256  CFC TOeSilva 2007  30.72    18  571726134106027067
+  1258  CFC TOeSilva 2006  31.17    18  335806927576651033
+  1260  CFC HrzogTOS 2007  30.86    18  542411771944351871
+  1262  CFC HrzogTOS 2008  30.39    19  1087112900219554391
+  1264  CFC CKernTOS 2010  30.07    19  1798556720194308703
+  1266  CFC HrzogTOS 2006  30.78    18  727082020527468413
+  1268  CFC HrzogTOS 2005  30.61    18  977147715704817539
+  1270  CFC HrzogTOS 2006  30.73    18  882943713911424097
+  1272* CFC TOeSilva 2006  31.59    18  305405826521087869
+  1274  CFC TOeSilva 2009  30.47    19  1430953616048277509
+  1276  CFC TOeSilva 2007  31.40    18  445249915053000907
+  1278  CFC HrzogTOS 2007  30.83    19  1011286887276072703
+  1280  CFC HrzogTOS 2007  30.87    19  1024528376045432807
+  1282  CFC TOeSilva 2009  30.67    19  1421604699797863297
+  1284  CFC HrzogTOS 2007  31.25    18  697543681633814903
+  1286  CFC JRdrgTOS 2008  30.75    19  1450329672253364801
+  1288  CFC HrzogTOS 2008  30.98    19  1134477539738474479
+  1290  CFC ATeixTOS 2007  30.33    19  2980707563031238363
+  1292  CFC TOeSilva 2006  31.71    18  494653394305448051
+  1294  CFC HrzogTOS 2010  30.76    19  1868326184764055803
+  1296  CFC CKernTOS 2010  30.83    19  1799235198379903447
+  1298  CFC TOeSilva 2010  30.90    19  1739018026817067239
+  1300  CFC HrzogTOS 2008  31.27    19  1141041866384833123
+  1302  CFC TOeSilva 2010  31.00    19  1731080876394228577
+  1304  CFC TOeSilva 2008  31.33    19  1188134379382395323
+  1306  CFC PardiTOS 2011  30.63    19  3278018069102480227
+  1308  CFC HrzogTOS 2006  31.78    18  749565457554371299
+  1310  CFC TOeSilva 2009  31.12    19  1918586799657617591
+  1312  CFC HrzogTOS 2009  31.40    19  1396487719253403577
+  1314  CFC TOeSilva 2008  31.56    19  1214119646547613277
+  1316  CFC HrzogTOS 2011  31.16    19  2187394669865744117
+  1318  CFC HrzogTOS 2011  31.20    19  2216270859803142601
+  1320  CFC HrzogTOS 2006  32.24    18  605046330029026447
+  1322  CFC HrzogTOS 2008  31.82    19  1106028436187467937
+  1324  CFC TOeSilva 2011  31.14    19  2937020849713856977
+  1326  CFC TOeSilva 2011  31.44    19  2075069444143279153
+  1328* CFC TOeSilva 2006  32.87    18  352521223451364323
+  1330  CFC TOeSilva 2011  31.28    19  2918478076849134103
+  1332  CFC PardiTOS 2012  31.28    19  3103251464536797599
+  1334  CFC PardiTOS 2011  31.43    19  2722012569747681653
+  1336  CFC HrzogTOS 2011  31.63    19  2221899288238768093
+  1338  CFC TOeSilva 2011  31.47    19  2927648057268473633
+  1340  CFC TOeSilva 2009  31.82    19  1954317467127310787
+  1342  CFC TOeSilva 2009  32.03    19  1578169106141187727
+  1344  CFC HrzogTOS 2006  32.65    18  753917635380895597
+  1346  CFC LLnhardy 2015  31.32    19  4646044042396639877
+  1348  CFC TOeSilva 2012  31.52    19  3754930427730628273
+  1350  CFC TOeSilva 2008  32.44    19  1180351752204137089
+  1352  CFC LLnhardy 2015  31.48    19  4459397360427487997
+  1354  CFC PardiTOS 2011  31.88    19  2805562883448462853
+  1356* CFC DonKnuth 2006  33.45    18  401429925999153707
+  1358  CFC HrzogTOS 2007  33.29    18  523255220614645319
+  1360  CFC HrzogTOS 2008  32.70    19  1153277647303540597
+  1362  CFC TOeSilva 2011  31.81    19  3937457950646269397
+  1364  CFC HrzogTOS 2007  32.87    19  1051140888051230423
+  1366  CFC RobSmith 2017  31.63    19  5662268059649697577
+  1368  CFC LLnhardy 2011  31.92    19  4105079953458040849
+  1370* CFC DonKnuth 2006  33.77    18  418032645936712127
+  1372  CFC LLnhardy 2014  31.99    19  4219088970046367161
+  1374  CFC PardiTOS 2011  32.34    19  2812814235281609869
+  1376  CFC Jacobsen 2017  31.89    19  5468779003189090187
+  1378  CFC Jacobsen 2017  31.95    19  5412399181863804469
+  1380  CFC HrzogTOS 2007  33.27    19  1031501833130243273
+  1382  C?C Be.Nyman 2012  31.17    20  18032546718518428769
+  1384  CFC Toni_Key 2017  31.85    19  7421944961369698183
+  1386  CFC PardiTOS 2012  32.47    19  3449340080274651527
+  1388  CFC TOeSilva 2011  32.63    19  2975205524123301149
+  1390  CFC PardiTOS 2012  32.55    19  3492657661005161107
+  1392  CFC TOeSilva 2009  33.27    19  1480032037939634731
+  1394  CFC Ritschel 2017  32.13    19  6910128698372846693
+  1396  CFC ColeStev 2017  32.04    19  8382021357433147093
+  1398  CFC TOeSilva 2011  33.02    19  2424708729726767749
+  1400  CFC PardiTOS 2012  32.80    19  3431657795858378003
+  1402  C?C Toni_Key 2017  32.03    20  10292262854454228757
+  1404  CFC RobSmith 2017  32.30    19  7529566736915883083
+  1406  CFC Pinho_MF 2017  32.22    19  8987860411525737317
+  1408  CFC LLnhardy 2017  32.73    19  4834864424015986771
+  1410  CFC HrzogTOS 2011  33.24    19  2635281932481539903
+  1412  C?C Be.Nyman 2015  31.87    20  17455685445816556607
+  1414  C?C Spielaur 2013  27.99    22  8717020121814043245517
+  1416  CFC TOeSilva 2012  33.11    19  3750992529339978877
+  1418  CFC TOeSilva 2012  33.16    19  3725235533504101511
+  1420  C?C Ritschel 2017  32.46    19  9984196949838014041
+  1422  CFC Jacobsen 2017  32.87    19  6124339150787745169
+  1424  C?C Spielaur 2011  27.07    23  70189259159557490256467
+  1426  CFC Ritschel 2017  32.92    19  6508776242818491391
+  1428  CFC Ritschel 2017  32.89    19  7161997391085310681
+  1430  CFC LLnhardy 2017  33.28    19  4606937813294064947
+  1432  C?C Spielaur 2011  27.13    23  84218359021503505748941
+  1434  CFC LLnhardy 2017  33.30    19  5013757591652095753
+  1436  C?C Be.Nyman 2015  32.41    20  17494076304651094403
+  1438  C?C Be.Nyman 2014  32.45    20  17554325571496337149
+  1440  CFC LLnhardy 2014  33.57    19  4253027105513399527
+  1442* CFC HrzogTOS 2005  34.98    18  804212830686677669
+  1444  C?C Spielaur 2011  27.31    23  91008005972217030656653
+  1446  C?C Jacobsen 2017  33.08    19  9656919634106230133
+  1448  CFC Ritschel 2017  33.59    19  5295442011781310951
+  1450  C?C Spielaur 2011  27.56    23  70189259161333697854327
+  1452  CFC RobSmith 2017  33.63    19  5642831456340753611
+  1454  CFC PardiTOS 2011  34.12    19  3219107182492871783
+  1456  CFC Pinho_MF 2017  33.62    19  6446080171984989091
+  1458  C?C Spielaur 2011  27.58    23  91008005946943131136471
+  1460  C?C Be.Nyman 2015  32.97    20  16952841674089990313
+  1462  CFC Ritschel 2017  33.61    19  7787601252820494607
+  1464  C?C Spielaur 2011  27.83    23  70189259173194156455743
+  1466  CFC Ritschel 2017  33.73    19  7547190328070365163
+  1468  CFC RobSmith 2017  34.00    19  5662789033400271433
+  1470  C?C Spielaur 2011  27.81    23  90008005937505956402147
+  1472  C?C Spielaur 2011  27.87    23  86218359339887747268047
+  1474  C?C Spielaur 2016  27.14    24  383125781171409136307917
+  1476* CFC TOeSilva 2009  35.31    19  1425172824437699411
+  1478  C?C Spielaur 2016  27.06    24  531003024200344806027041
+  1480  C?C Spielaur 2016  27.16    24  461003024868247915125547
+  1482  C?C Spielaur 2010  27.67    24  183258606254432207226701
+  1484  C?C Spielaur 2011  28.18    23  73801917125338389287387
+  1486  C?C Spielaur 2016  27.26    24  475135025379761967410137
+  1488* CFC ANair_MF 2017  34.45    19  5733241593241196731
+  1490  CFC Jacobsen 2017  34.28    19  7562321651334729221
+  1492  C?C Spielaur 2016  27.57    24  316129781931380000239027
+  1494  C?C TRNicely 2010  27.22    24  685118971500435376681717
+  1496  C?C Spielaur 2016  27.44    24  475135024889715392823563
+  1498  C?C Spielaur 2016  27.44    24  512152024202519512101751
+  1500  C?C Spielaur 2016  27.74    24  305125465993752593927377
+  1502  C?C Ritschel 2017  34.37    19  9586724781371233277
+  1504  C?C Spielaur 2016  27.56    24  503139024596876682156067
+  1506  C?C Spielaur 2016  26.52    25  4601311025551883373728653
+  1508  C?C Spielaur 2016  27.89    24  305125465807857154823039
+  1510* CFC Jacobsen 2017  34.82    19  6787988999657777797
+  1512  C?C Spielaur 2016  27.75    24  461003025125326278571391
+  1514  C?C Spielaur 2016  27.85    24  407157025236974485914323
+  1516  C?C Spielaur 2016  26.33    26  10234026002851290556780051
+  1518  C?C Spielaur 2016  27.79    24  528013024586049933996743
+  1520  C?C Spielaur 2016  26.81    25  4201211025764471639339801
+  1522  C?C Spielaur 2017  27.58    24  921774025086793629136081
+  1524  C?C Spielaur 2016  28.16    24  321118702204796464465487
+  1526  C?C Spielaur 2016  28.22    24  305125465928083147157003
+  1528  C?C Spielaur 2010  27.13    25  2868123202735559373309559
+  1530  C?C Be.Nyman 2014  34.52    20  17678654157568189057
+  1532  C?C Spielaur 2016  27.83    24  799788024269457962055011
+  1534  C?C Spielaur 2016  27.17    25  3301311026092022751547513
+  1536  C?C Spielaur 2016  26.68    26  10011026002728082330953257
+  1538  C?C Spielaur 2016  28.18    24  507139024301934138131291
+  1540  C?C Spielaur 2016  27.11    25  4691003025738244430992993
+  1542  C?C Spielaur 2016  28.39    24  386129781045655719636997
+  1544  C?C Spielaur 2011  29.21    23  90008005599853798224983
+  1546  C?C Spielaur 2016  27.32    25  3801341025676353579488347
+  1548  C?C Spielaur 2016  28.61    24  316129781674683983721599
+  1550  C?C Be.Nyman 2014  34.94    20  18361375334787046697
+  1552  C?C Spielaur 2010  27.53    25  3068423101718236902277189
+  1554  C?C Spielaur 2016  28.73    24  308125469252023047069449
+  1556  C?C Spielaur 2016  28.61    24  413139024725895827274791
+  1558  C?C Spielaur 2016  27.61    25  3201211026096992172885613
+  1560  C?C Spielaur 2016  28.83    24  316129781708379789584657
+  1562  C?C Spielaur 2016  27.67    25  3301311026130755902574909
+  1564  C?C Spielaur 2016  26.84    26  20234026002021828850749829
+  1566  C?C Spielaur 2016  27.74    25  3301311025944808635214097
+  1568  C?C Spielaur 2016  27.61    25  4601311025396455887418763
+  1570  C?C Spielaur 2017  28.63    24  654774025979872326628579
+  1572  C?C Spielaur 2010  27.95    25  2668423000548442212501451
+  1574  C?C Spielaur 2016  28.82    24  528013024039203644261483
+  1576  C?C Spielaur 2016  26.63    26  50011026000985432236994141
+  1578  C?C Spielaur 2014  28.98    24  444888024000161880076721
+  1580  C?C Spielaur 2016  27.81    25  4691003025908581964940257
+  1582  C?C Spielaur 2016  27.84    25  4771561025190978473357407
+  1584  C?C Spielaur 2011  29.96    23  92008005233975799174049
+  1586  C?C Spielaur 2014  27.90    25  4911005025340091351827133
+  1588  C?C Spielaur 2010  26.83    26  50511544017012180631065949
+  1590  C?C Spielaur 2016  29.13    24  507139024133574480779581
+  1592  C?C Spielaur 2016  27.32    26  20383026002229098626547639
+  1594  C?C TRNicely 2010  27.96    25  5701963804766267176483453
+  1596  C?C Spielaur 2016  27.69    26  10754026002910822471647077
+  1598  C?C Spielaur 2017  29.15    24  645600025854624019250411
+  1600  C?C Spielaur 2016  28.36    25  3171561026006830544235721
+  1602  C?C Spielaur 2016  29.55    24  348125468109010265299271
+  1604  C?C Spielaur 2016  28.88    25  1327091025276307145025053
+  1606  C?C Spielaur 2016  26.84    26  96523126000821941252818897
+  1608  C?C Spielaur 2016  27.28    26  39753026000635545510229939
+  1610  C?C Spielaur 2016  27.31    26  40234026001701479812754627
+  1612  C?C Spielaur 2011  30.49    23  91008005685955879916401
+  1614  C?C Spielaur 2016  27.28    26  50011026000605167554818833
+  1616  C?C Spielaur 2016  27.30    26  50503126001280209002157267
+  1618  C?C Spielaur 2016  26.20    27  663853313029538898678832333
+  1620  C?C Spielaur 2016  29.59    24  601559025236668271908379
+  1622  C?C Spielaur 2014  26.37    27  517021551027300752874127919
+  1624  C?C Spielaur 2014  27.63    26  33631026000015061369578943
+  1626  C?C TRNicely 2010  28.90    25  2707785833621549647333583
+  1628  C?C Spielaur 2016  27.36    26  70148378026032707452739483
+  1630  C?C Spielaur 2016  28.29    26  10503126003077789930911879
+  1632  C?C TRNicely 2010  29.75    24  671442875163990116829497
+  1634  C?C Spielaur 2016  27.85    26  30503126001908673286734443
+  1636  C?C Spielaur 2014  26.60    27  517021551027221869667371771
+  1638  C?C Spielaur 2016  27.91    26  30503126001937442050523309
+  1640  C?C Spielaur 2016  28.48    26  10148375028695776627340501
+  1642  C?C Spielaur 2016  27.75    26  50011026001254085912788547
+  1644  C?C Spielaur 2016  27.24    27  163453313028482943129786827
+  1646  C?C Spielaur 2011  26.65    27  663289118707319000434408253
+  1648  C?C Spielaur 2016  28.62    26  10234026002878309225086799
+  1650  C?C Spielaur 2016  30.28    24  461003025023148162667033
+  1652  C?C Spielaur 2016  27.64    26  90523126001136840586142237
+  1654  C?C Spielaur 2017  29.98    24  908600025159019423417933
+  1656  C?C Spielaur 2010  29.44    25  2668123000582492119464617
+  1658  C?C Spielaur 2014  28.15    26  38283026000105876456447549
+  1660  C?C Spielaur 2016  28.16    26  39753026000841430736202739
+  1662  C?C Spielaur 2016  28.19    26  40503126001716558768993799
+  1664  C?C Spielaur 2016  27.58    27  161023337027912452750278023
+  1666  C?C Spielaur 2016  28.15    26  50234026000970339549409247
+  1668  C?C Spielaur 2017  27.51    27  213245698033420319205132239
+  1670  C?C Spielaur 2014  27.35    27  333245298028562639400861353
+  1672  C?C Spielaur 2017  27.19    27  513245698030828909575601339
+  1674  C?C Spielaur 2016  27.72    27  167021551028209682440801699
+  1676  C?C Spielaur 2016  29.10    26  10234026003107509182675341
+  1678  C?C Spielaur 2016  28.36    26  50148375026035070947338349
+  1680  C?C Spielaur 2016  28.63    26  30754026001914877674629069
+  1682  C?C Spielaur 2017  27.57    27  311506729032937628022443951
+  1684  C?C Spielaur 2017  27.38    27  511506729031398651728778067
+  1686  C?C Spielaur 2012  28.34    26  69361551050005488066587623
+  1688  C?C Spielaur 2016  27.88    27  197021551027975628706026789
+  1690  C?C Spielaur 2016  29.76    25  4601311025550610228138711
+  1692  C?C Spielaur 2016  29.04    26  20011026002245172849022109
+  1694  C?C Spielaur 2016  28.88    26  30011026002067075950402629
+  1696  C?C Spielaur 2016  28.11    27  161023337028310365631639753
+  1698  C?C Spielaur 2012  28.64    26  55723122040086608203258649
+  1700  C?C Spielaur 2017  27.86    27  313245698033230889150530529
+  1702  C?C Spielaur 2012  28.60    26  69361551050100334908440329
+  1704  C?C Spielaur 2017  27.93    27  313245698033182498585270459
+  1706  C?C Spielaur 2016  28.05    27  261023337027413737623820943
+  1708  C?C Spielaur 2017  28.17    27  214206313033093854067624189
+  1710  C?C TRNicely 2010  31.14    24  708664733765282327176751
+  1712  C?C Spielaur 2014  27.99    27  363253313027185154998755239
+  1714  C?C Spielaur 2017  27.00    28  3681804411029893987474470217
+  1716  C?C Spielaur 2017  28.00    27  414206313031722240284185387
+  1718  C?C Spielaur 2016  28.71    26  96523126000774442796493001
+  1720  C?C Spielaur 2017  27.86    27  644206313029514430481373071
+  1722  C?C Spielaur 2017  28.59    27  144206313034196462763940691
+  1724  C?C Spielaur 2013  28.47    27  198245298028294569694862807
+  1726  C?C Spielaur 2017  27.33    28  2681804411030755719098017357
+  1728  C?C Spielaur 2014  29.28    26  42461577000200688572056091
+  1730  C?C Spielaur 2017  28.37    27  302233338032699490171225683
+  1732  C?C Spielaur 2017  28.39    27  311506729033600779408899821
+  1734  C?C Spielaur 2016  29.30    26  50754026000858414432532293
+  1736  C?C Spielaur 2016  28.89    27  124127829027210048144492593
+  1738  C?C Spielaur 2017  27.28    28  4681804411029005436867165703
+  1740  C?C Spielaur 2016  29.66    26  30011026001827477703636173
+  1742  C?C Spielaur 2016  27.49    28  3281312000028041064344397077
+  1744  C?C Spielaur 2013  28.21    27  707021551027292281700892253
+  1746  C?C Spielaur 2017  29.66    26  37039655026277896461956917
+  1748  C?C Spielaur 2017  27.53    28  3717737905029238085958241901
+  1750  C?C Spielaur 2016  32.10    24  475135024904107611376237
+  1752  C?C Spielaur 2017  29.76    26  37039655026170596199293657
+  1754  C?C Spielaur 2016  28.85    27  253022127028061413693503653
+  1756  C?C Spielaur 2016  28.54    27  531506722030087317322633423
+  1758  C?C Spielaur 2017  28.82    27  311506729033128520542076519
+  1760  C?C Spielaur 2017  29.08    27  191506729035783842003969843
+  1762  C?C Spielaur 2017  28.57    27  612233338029222068547009577
+  1764  C?C Spielaur 2013  29.13    27  198245298028246350476778643
+  1766  C?C Spielaur 2016  30.72    25  9242091025170776894993897
+  1768  C?C Spielaur 2016  28.85    27  414127829027107949907596749
+  1770  C?C Spielaur 2016  28.94    27  361023337029651191344064387
+  1772  C?C Spielaur 2017  28.54    27  931506729027818356495510979
+  1774  C?C Spielaur 2016  29.40    27  161023337028376633976274427
+  1776  C?C Spielaur 2016  28.77    27  644853313031247468724712767
+  1778  C?C Spielaur 2017  29.14    27  314206313032559556437705819
+  1780  C?C Spielaur 2016  30.19    26  40234026001663729377896431
+  1782  C?C Spielaur 2017  28.70    27  931506729027974407041540707
+  1784  C?C Spielaur 2017  27.97    28  5020547613028019048897910089
+  1786  C?C Spielaur 2013  29.04    27  508253313027343345210322131
+  1788  C?C Spielaur 2016  29.06    27  531506722032894991035261461
+  1790  C?C Spielaur 2016  29.44    27  253022127027824187693016727
+  1792  C?C Spielaur 2016  29.03    27  644853313030609631743421827
+  1794  C?C Spielaur 2017  28.41    28  2681804411030796838102390267
+  1796  C?C Spielaur 2016  29.08    27  663853313028090003058817561
+  1798  C?C Spielaur 2014  29.23    27  517021551027178550547527491
+  1800  C?C Spielaur 2017  29.69    27  211506729033894836038769081
+  1802  C?C Spielaur 2016  28.17    28  6101239311029812830316130021
+  1804  C?C Spielaur 2017  29.81    27  191506729035541878306248743
+  1806  C?C Spielaur 2016  30.20    26  94283026000460650817643547
+  1808  C?C Spielaur 2017  30.25    26  91084263026046832262353511
+  1810  C?C Spielaur 2016  29.83    27  227021551027737529987065469
+  1812  C?C Spielaur 2016  29.96    27  185265722028138732845783509
+  1814  C?C Spielaur 2016  30.04    27  167021551028816331494487719
+  1816  C?C Spielaur 2017  28.75    28  2681804411030756891181329527
+  1818  C?C Spielaur 2016  29.73    27  361023337029228675738125911
+  1820  C?C Spielaur 2016  28.47    28  5739248000028792850873302491
+  1822  C?C Spielaur 2017  28.60    28  4603737621033901941540708091
+  1824  C?C Spielaur 2017  29.14    28  1521777371031390770504220229
+  1826  C?C Spielaur 2016  28.55    28  5972248000023708695939463647
+  1828  C?C Spielaur 2015  27.89    29  29045119029001231341899676133
+  1830  C?C Spielaur 2016  30.64    26  86087256026428977676556479
+  1832  C?C Spielaur 2016  28.54    28  7500230000000254312587886349
+  1834  C?C Spielaur 2017  29.73    27  612233338029577635338157403
+  1836  C?C Spielaur 2016  28.60    28  7500230000004410741095419811
+  1838  C?C Spielaur 2016  28.66    28  7051230000020674054592576303
+  1840  C?C Spielaur 2017  29.92    27  512233338030056680994432863
+  1842  C?C Spielaur 2017  29.11    28  3001549619028368687092343141
+  1844  C?C Spielaur 2016  26.78    30  797651149641030139169099592509
+  1846  C?C Spielaur 2016  28.76    28  7500230000005824418875087691
+  1848  C?C Spielaur 2016  29.27    28  2644230000031218882264673171
+  1850  C?C Spielaur 2010  29.99    27  622337118707239085237867807
+  1852  C?C Spielaur 2017  29.15    28  3883778117029429378726839157
+  1854  C?C Spielaur 2017  29.16    28  4104778551032348081124935707
+  1856  C?C Spielaur 2016  29.03    28  5851230000021967795781669357
+  1858  C?C Spielaur 2017  29.22    28  4101238311033979111838291509
+  1860  C?C Spielaur 2017  28.60    29  17732838154768747139118040801
+  1862  C?C Spielaur 2016  28.67    29  16107428778766062769433544071
+  1864  C?C Spielaur 2016  27.27    30  484458149616032368701456021079
+  1866  C?C Spielaur 2017  30.25    27  612233338029038274818850137
+  1868  C?C Spielaur 2017  29.07    28  8104778551030016778369544613
+  1870  C?C Spielaur 2016  30.39    27  531506722032495269637700891
+  1872  C?C Spielaur 2017  29.34    28  5101238311032066979592474507
+  1874  C?C Spielaur 2017  28.07    29  98731233432030301788380501897
+  1876  C?C Spielaur 2011  28.12    29  94381705258295181151295669737
+  1878  C?C Spielaur 2017  28.79    29  21119471029029007664840376149
+  1880  C?C Spielaur 2017  28.18    29  93825139554000834758506871159
+  1882  C?C Spielaur 2016  29.26    28  8511230000017373935165665319
+  1884  C?C Spielaur 2016  29.47    28  5844230000028765302725127593
+  1886  C?C Spielaur 2017  29.62    28  4521777371028957272039263763
+  1888  C?C Spielaur 2016  29.42    28  7500230000005019060037933673
+  1890  C?C Spielaur 2010  29.77    28  3733289118707267491829280101
+  1892  C?C Spielaur 2016  29.41    28  8761007116028125697454115487
+  1894  C?C Spielaur 2017  29.64    28  5603737621032667844132289397
+  1896  C?C Spielaur 2017  29.15    29  17817006514740891827868262213
+  1898  C?C Spielaur 2017  29.24    29  15600350800200231835802693153
+  1900  C?C Spielaur 2017  29.80    28  4883778117028144439778057967
+  1902  C?C Spielaur 2017  29.99    28  3521777371029774497617670861
+  1904  C?C Spielaur 2017  27.59    30  927619616117030224870646906207
+  1906  C?C Spielaur 2015  26.02    32  65013315500001000157495421077531
+  1908  C?C Spielaur 2017  29.35    29  16967428778771122673539497533
+  1910  C?C Spielaur 2017  29.72    28  8101238311029153282478027583
+  1912  C?C Spielaur 2017  28.66    29  93010225055029330341377130337
+  1914  C?C Spielaur 2017  30.13    28  3883778117029553360606784223
+  1916  C?C Spielaur 2016  30.28    28  3039248000030181434897238311
+  1918  C?C Spielaur 2017  30.13    28  4392804445028608016009081833
+  1920  C?C Spielaur 2016  30.37    28  2844230000030892453360363713
+  1922  C?C Spielaur 2017  30.17    28  4611238371029716324077383681
+  1924  C?C Spielaur 2017  30.07    28  6101238311031688672705309009
+  1926  C?C Spielaur 2015  29.53    29  21124471029101398728988856797
+  1928  C?C Spielaur 2017  28.90    29  93777234437033872048058808383
+  1930  C?C Spielaur 2017  28.93    29  93777234437032666433522975959
+  1932  C?C Spielaur 2015  29.48    29  29045119029001077581773468231
+  1934  C?C Spielaur 2017  30.57    28  3001549619029361061238343309
+  1936  C?C Spielaur 2016  32.08    27  161023337027994323152086013
+  1938  C?C Spielaur 2016  30.16    28  8012239000018115133439311463
+  1940  C?C Spielaur 2017  28.13    30  892340838549031853833349514503
+  1942  C?C Spielaur 2016  29.90    29  16107428778765313805063526049
+  1944  C?C Spielaur 2016  30.72    28  3044230000030128405583745033
+  1946  C?C Spielaur 2016  30.42    28  6101239311030479007754228103
+  1948  C?C Spielaur 2016  29.99    29  16107428778765206909298916249
+  1950  C?C Spielaur 2017  30.04    29  15600350800200591840837572687
+  1952  C?C Spielaur 2013  26.78    32  45154861419265032079255464330641
+  1954  C?C Spielaur 2017  30.69    28  4521777371028573501293031019
+  1956  C?C Spielaur 2011  26.79    32  51365308007314298011469041814473
+  1958  C?C Spielaur 2011  28.53    30  631337750259693153112235938121
+  1960  C?C Spielaur 2016  30.59    28  6670605040015867559498340553
+  1962  C?C Spielaur 2016  29.46    29  83723413734029484073263062011
+  1964  C?C Spielaur 2014  30.20    29  17361011751029174933335986203
+  1966  C?C Spielaur 2016  28.55    30  801451149611030624254364873641
+  1968  C?C Spielaur 2016  30.28    29  16817006514738017659250207459
+  1970  C?C Spielaur 2013  27.81    31  5887250233904031284472398660693
+  1972  C?C Jacobsen 2017  29.64    29  78965098027967495955787825381
+  1974  C?C Spielaur 2016  30.85    28  6139248000028643882072689133
+  1976  C?C Spielaur 2016  30.93    28  5570675040016229618538921497
+  1978  C?C Spielaur 2012  30.48    29  15251000000439240915164391943
+  1980  C?C Spielaur 2016  30.81    28  8051230000019922137852468729
+  1982  C?C Spielaur 2016  30.88    28  7500230000011523034496281371
+  1984  C?C RFischer 2016  27.52    32  20282409603651671079340215344953
+  1986  C?C Spielaur 2017  28.20    31  3809205709418032358337519745171
+  1988  C?C Spielaur 2017  28.82    30  917123687913032561163805565423
+  1990  C?C Spielaur 2013  32.20    27  685245298027055418345996361
+  1992  C?C Spielaur 2016  28.93    30  801451149611030245636120895591
+  1994  C?C Spielaur 2016  31.17    28  6021312001028259683626568699
+  1996  C?C Spielaur 2010  27.14    32  85982514713000000005643994785767
+  1998  C?C Spielaur 2017  28.73    31  1611281318552031378980232272063
+=========================================================================================
+</PRE></H4>
+<HR />
+<A HREF="../index.html#TPG">Additional lists</A> of first known
+occurrence prime gaps are maintained on this site.
+<BR>
+<A NAME="SuppTable"></A>
+<BR>
+The following additional kilogaps (not first occurrences) were
+discovered, below 5e16, by Dr. Bertil Nyman (with one overlooked
+exception, discovered by
+<A HREF="http://www.ieeta.pt/~tos/hobbies.html">Tom&#225;s Oliveira
+e Silva</A>). The gaps in this list, together with the gaps of 1000
+or greater in the above list, are believed to include all gaps of 1000
+or greater lying below 5e16. The second character &quot;N&quot; in
+the classification column indicates that these are definitely
+<U>not</U> first occurrences. All are certified conventional gaps.
+<HR />
+<H4>
+<PRE>
+============================================================
+   Gap  Cls Discvrer Year  Merit Digts  Following the prime
+============================================================
+  1000  CNC Be.Nyman 2001  26.47    17  25595249272424341
+  1000  CNC Be.Nyman 2001  26.39    17  28629011113073167
+  1000  CNC Be.Nyman 2001  26.32    17  31823517013736431
+  1000  CNC Be.Nyman 2002  26.24    17  35470670320988593
+  1000  CNC Be.Nyman 2002  26.23    17  36135250678096117
+  1000  CNC Be.Nyman 2002  26.21    17  36882315435317557
+  1000  CNC Be.Nyman 2002  26.16    17  39958674936070063
+  1000  CNC Be.Nyman 2002  26.13    17  41944157573468467
+  1000  CNC Be.Nyman 2002  26.07    17  45323711805720487
+  1000  CNC Be.Nyman 2002  26.04    17  47534032897345081
+  1000  CNC Be.Nyman 2002  26.04    17  47804057785446727
+  1002  CNC Be.Nyman 2001  26.56    17  24205807447675771
+  1002  CNC Be.Nyman 2001  26.52    17  25540073145914881
+  1002  CNC Be.Nyman 2001  26.52    17  25650415492326749
+  1002  CNC Be.Nyman 2001  26.43    17  28994175076871317
+  1002  CNC Be.Nyman 2002  26.33    17  33819298939289887
+  1002  CNC Be.Nyman 2002  26.08    17  48285321959130517
+  1002  CNC Be.Nyman 2002  26.06    17  49623447037451437
+  1004  CNC Be.Nyman 2000  27.25    16  9960917025524369
+  1004  CNC Be.Nyman 2001  26.52    17  27653636170984913
+  1004  CNC Be.Nyman 2001  26.44    17  31014759148910297
+  1004  CNC Be.Nyman 2002  26.37    17  34117668325273073
+  1004  CNC Be.Nyman 2002  26.27    17  39561227332093133
+  1004  CNC Be.Nyman 2002  26.15    17  47394134464385393
+  1004  CNC Be.Nyman 2002  26.13    17  48599214758753039
+  1006  CNC Be.Nyman 2001  26.34    17  38860190795020207
+  1006  CNC Be.Nyman 2002  26.32    17  39668119625430451
+  1006  CNC Be.Nyman 2002  26.26    17  43204462874641381
+  1006  CNC Be.Nyman 2002  26.26    17  43701230282969011
+  1008  CNC Be.Nyman 2000  27.13    17  13699073167684661
+  1008  CNC Be.Nyman 2000  27.05    17  15215879990782973
+  1008  CNC Be.Nyman 2001  26.68    17  25752061034549021
+  1008  CNC Be.Nyman 2001  26.66    17  26199868405684403
+  1008  CNC Be.Nyman 2001  26.55    17  30749317916353451
+  1008  CNC Be.Nyman 2002  26.43    17  36432701708932051
+  1008  CNC Be.Nyman 2002  26.36    17  40726545333502159
+  1008  CNC Be.Nyman 2002  26.34    17  41609910693405563
+  1008  CNC Be.Nyman 2002  26.31    17  43416655822933579
+  1008  CNC Be.Nyman 2002  26.25    17  47762273682225451
+  1010  CNC Be.Nyman 2001  26.64    17  28993025781109937
+  1010  CNC Be.Nyman 2001  26.62    17  30190277050766891
+  1010  CNC Be.Nyman 2002  26.50    17  35433701147012603
+  1010  CNC Be.Nyman 2002  26.41    17  40897155217629551
+  1010  CNC Be.Nyman 2002  26.34    17  45248261042639549
+  1012  CNC Be.Nyman 2001  26.68    17  29610479835016411
+  1012  CNC Be.Nyman 2002  26.50    17  38403638754920209
+  1012  CNC Be.Nyman 2002  26.37    17  46286557189022401
+  1014  CNC Be.Nyman 2000  27.24    17  14606010090226363
+  1014  CNC Be.Nyman 2002  26.53    17  39576352732310687
+  1014  CNC Be.Nyman 2002  26.49    17  42329881811496703
+  1014  CNC Be.Nyman 2002  26.46    17  44132204614638103
+  1014  CNC Be.Nyman 2002  26.42    17  46337133986629439
+  1016  CNC Be.Nyman 2001  26.60    17  38756248991068211
+  1016  CNC Be.Nyman 2002  26.46    17  47139760082920283
+  1018  CNC Be.Nyman 2002  26.62    17  40377635164335499
+  1018  CNC Be.Nyman 2002  26.53    17  45907165644486541
+  1020  CNC Be.Nyman 2001  26.95    17  27327900274794137
+  1020  CNC Be.Nyman 2001  26.87    17  30808037902520647
+  1020  CNC Be.Nyman 2001  26.83    17  32527997461232479
+  1020  CNC Be.Nyman 2002  26.80    17  33615066500120311
+  1020  CNC Be.Nyman 2002  26.67    17  40624127854015639
+  1020  CNC Be.Nyman 2002  26.67    17  40958706539854291
+  1020  CNC Be.Nyman 2002  26.62    17  43660628534512111
+  1020  CNC Be.Nyman 2002  26.62    17  43943832252612433
+  1020  CNC Be.Nyman 2002  26.57    17  47317406790880003
+  1022  CNC Be.Nyman 2002  26.63    17  46167071676726149
+  1024  CNC Be.Nyman 2001  27.05    17  27605430702324427
+  1024  CNC Be.Nyman 2002  26.74    17  42830075709068503
+  1024  CNC Be.Nyman 2002  26.68    17  46872829456465279
+  1026  CNC Be.Nyman 2001  27.23    17  23086519897791131
+  1026  CNC TOeSilva 2003  27.16    17  25382361249570613
+  1026  CNC Be.Nyman 2002  26.75    17  45126785735822477
+  1028  CNC Be.Nyman 2002  27.03    17  32889382083031571
+  1028  CNC Be.Nyman 2002  26.76    17  48449697954500351
+  1030  CNC Be.Nyman 2001  27.29    17  24772289265796027
+  1030  CNC Be.Nyman 2001  27.28    17  24923219403724231
+  1030  CNC Be.Nyman 2002  27.01    17  36249320156013301
+  1030  CNC Be.Nyman 2002  26.99    17  37255746206822929
+  1032  CNC Be.Nyman 2001  27.44    17  21446006399971841
+  1036  CNC Be.Nyman 2002  27.16    17  36908796640537957
+  1038  CNC Be.Nyman 2002  27.27    17  33832181549131129
+  1038  CNC Be.Nyman 2002  27.18    17  38278044950622511
+  1040  CNC Be.Nyman 2002  27.06    17  49434138149438219
+  1042  CNC Be.Nyman 2002  27.22    17  42084539343243211
+  1044  CNC Be.Nyman 2001  27.70    17  23418901791860149
+  1044  CNC Be.Nyman 2001  27.55    17  28691351954678047
+  1044  CNC Be.Nyman 2002  27.36    17  37262207402572609
+  1044  CNC Be.Nyman 2002  27.19    17  47388635802622937
+  1044  CNC Be.Nyman 2002  27.17    17  48425839138502953
+  1044  CNC Be.Nyman 2002  27.15    17  49932966721269389
+  1046  CNC Be.Nyman 2002  27.35    17  40792193275354607
+  1050  CNC Be.Nyman 2001  27.75    17  27270049287533093
+  1050  CNC Be.Nyman 2001  27.72    17  28266777591970859
+  1050  CNC Be.Nyman 2002  27.44    17  41280978711324553
+  1050  CNC Be.Nyman 2002  27.37    17  45856086057270571
+  1054  CNC Be.Nyman 2002  27.42    17  49705923985791859
+  1058  CNC Be.Nyman 2002  27.63    17  42491913045456131
+  1062  CNC Be.Nyman 2001  28.01    17  29228210437894229
+  1062  CNC Be.Nyman 2002  27.74    17  42079111699533971
+  1062  CNC Be.Nyman 2002  27.74    17  42135469324106969
+  1098  CNC Be.Nyman 2002  28.91    17  31241326305775211
+  1098  CNC Be.Nyman 2001  28.88    17  32373474258793079
+  1100  CNC Be.Nyman 2001  29.02    17  28907866922785967
+  1106  CNC Be.Nyman 2001  29.13    17  30742387342787777
+============================================================
+</PRE>
+<HR />
+</H4>
+<UL>
+<LI><A HREF="#Top">Top of page</A></LI>
+<LI><A HREF="../index.html#TPG">Other tables of prime gaps</A></LI>
+<LI><A HREF="../index.html">Home page</A></LI>
+</UL>
+<HR />
+</BODY>
+</HTML>
