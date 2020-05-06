@@ -1,0 +1,25 @@
+import sage.libs.mpmath.all as mpmath
+
+mpmath_ctx = mpmath.fp
+
+
+def cykappa(r, u):
+    return mpmath_ctx.besselk(1j*r, u)
+
+def cykappa_with_mult(r, u):
+    pi = mpmath_ctx.pi
+    cdef double exp_Pih_R=mpmath_ctx.exp(pi * r / 2.)
+    return mpmath_ctx.besselk(1j*r, u) * exp_Pih_R
+
+def cyV(n, l, r, Q, zjlist, zjstarlist):
+    pi = mpmath_ctx.pi
+    cdef double exp_Pih_R=mpmath_ctx.exp(pi * r / 2.)
+    cdef double complex ret = 0
+    for zj, zjs in zip(zjlist, zjstarlist):
+        xj = zj.real()
+        xjs = zjs.real()
+        yjs = zjs.imag()
+        ret += mpmath_ctx.sqrt(yjs) * exp_Pih_R * cykappa(r, 2 * pi * abs(l) * yjs) \
+               * mpmath_ctx.exp(2*pi*1j*(l * xjs - n * xj))
+    ret = ret / (2*Q)
+    return ret
