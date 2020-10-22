@@ -6,8 +6,8 @@ const long double PI = 3.14159265359;
 void compute_val(long double & xval, long double & yval, long long omega, long long n, long long y){
   long double xtotal = 0;
   long double ytotal = 0;
-  xtotal = std::cos(2*PI*omega*y/n);
-  ytotal = std::sin(2*PI*omega*y/n);
+  xtotal = std::cos(2*PI*y/n) + std::cos(2*PI*omega*y/n);
+  ytotal = std::sin(2*PI*y/n) + std::sin(2*PI*omega*y/n);
   long long omegapower = (omega*omega) % n;
   while (omegapower != 0 && omegapower != 1 && omegapower != omega){
     xtotal += std::cos(2*PI*omegapower*y/n);
@@ -30,6 +30,8 @@ void compute_all_vals(long long omega, long long n){
 
 int main(){
   //compute_all_vals(20719, 551905);
-  compute_all_vals(3124, 478125);
+  //compute_all_vals(3124, 478125);
+  //compute_all_vals(1693, 770*13*3);
+  compute_all_vals(2337, 91205);
   return 0;
 }
