@@ -348,16 +348,23 @@ def run_raw_sage_trial_on_t(t, box_size=10, verbose=True):
     seenlist = SeenList(t)
     curve = EllipticCurve([-t*t, 0])
     E = curve
+    usepari = False
 
     # Extra statistics
     stat = dict()
     try:
         stat['rank'] = curve.rank()
     except RuntimeError:
-        print("Sage is unable to compute the rank of the curve. Aborting.")
-        stat['sagefail'] = -1
-        statistics[t] = stat
-        raise
+        print("Trying to use pari to determine rank...")
+        pE = pari(curve)
+        try:
+            stat['rank'] = pE.ellanalyticrank()[0]
+            usepari = True
+        except PariError:
+            print("Sage/pari failed to determine rank.")
+            stat['sagefail'] = -1
+            statistics[t] = stat
+            raise RuntimeError("Sage/pari failed to determine rank.")
 
     if stat['rank'] == 0:
         if verbose:
@@ -369,12 +376,16 @@ def run_raw_sage_trial_on_t(t, box_size=10, verbose=True):
         print("{} is congruent.".format(t))
 
     try:
-        gens = curve.gens()
-    except RuntimeError:
-        print("Sage is unable to compute the generators of the curve. Aborting.")
+        if usepari:
+            gen = pari(curve).ellheegner()
+            gens = [curve.point(list(gen))]
+        else:
+            gens = curve.gens()
+    except (RuntimeError, PariError):
+        print("Sage/pari is unable to compute the generators of the curve.")
         stat['sagefail'] = -1
         statistics[t] = stat
-        raise
+        raise RunTimeError("Sage/pari failed to make generators.")
 
     if verbose:
         print("{} generators found. Expecting {}.".format(len(gens), stat['rank']))
@@ -385,12 +396,12 @@ def run_raw_sage_trial_on_t(t, box_size=10, verbose=True):
         range(-box_size, box_size + 1), repeat=stat['rank']
     ):
         array = list(array)
-        # We can guarantee first index is positive
+        # We can guarantee first index is nonnegative
         if array[0] < 0:
             continue
 
         # Multiplying by 0 gives the identity, and should be omitted
-        if any(index == 0 for index in array):
+        if all(index == 0 for index in array):
             continue
 
         # Prevent going too large in multidimensional boxes
@@ -401,7 +412,7 @@ def run_raw_sage_trial_on_t(t, box_size=10, verbose=True):
         pt = E.point((0, 1, 0))   # The identity point in the group
         for mult, gen in zip(array, gens):
             pt += mult * E.point(gen)
-            seenlist.check_from_pt(pt)
+        seenlist.check_from_pt(pt)
 
     num_triangles = count
     stat['num_triangles_checked'] = num_triangles
@@ -419,7 +430,7 @@ def run_raw_sage_trial_on_t(t, box_size=10, verbose=True):
     del seenlist
 
 
-def driver(upper_bound=20, box_size=10, method='sage'):
+def driver(lower_bound=5, upper_bound=20, box_size=10, method='sage'):
     """
     Main entry point. Perform tests on each t up to `upper_bound`, using a box
     of side-length `box_size` for multiples.
@@ -431,7 +442,7 @@ def driver(upper_bound=20, box_size=10, method='sage'):
     """
     import time
     # 5 is the smallest congruent number, so begin there
-    for t in range(5, upper_bound+1):
+    for t in range(lower_bound, upper_bound+1):
         try:
             start = time.time()
             if method == 'sage':
@@ -445,12 +456,14 @@ def driver(upper_bound=20, box_size=10, method='sage'):
         except ValueError:    # number is not squarefree
             print("{} is not squarefree. Skipping...".format(t))
         except RuntimeError:  # sage is unable to proceed
+            print("\n\nFAILED ON {}\n\n".format(t))
             continue
         sys.stdout.flush()
 
+
 if __name__ == "__main__":
     # In practice, adjust upper_bound and box_size
-    driver(upper_bound=100, box_size=30, method='sage')
+    driver(lower_bound=100, upper_bound=200, box_size=75, method='sage')
     print("\n\n\n")
     print("Statistics")
     print(statistics)
